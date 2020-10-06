@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Forca" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forca" translatesAutoresizingMaskIntoConstraints="NO" id="0ae-hb-Elc">
+                                <rect key="frame" x="134" y="69" width="146" height="265"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dead_full_body" translatesAutoresizingMaskIntoConstraints="NO" id="5Qd-m9-Rav">
+                                <rect key="frame" x="225.5" y="181" width="47.5" height="137.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhX-cl-txY">
+                                <rect key="frame" x="365" y="69" width="24" height="24"/>
+                                <state key="normal" image="refresh_icon"/>
+                                <connections>
+                                    <action selector="onRefreshPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R62-gj-Jz4"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="3Rv-my-gWR">
+                                <rect key="frame" x="140" y="358" width="134.5" height="130.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A dica é: ANIMAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zJ-4b-CdZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="134.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_  _  _  _  _  _" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XnB-vd-Uok">
+                                        <rect key="frame" x="6" y="45" width="122.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="???" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-sq-9Dp">
+                                        <rect key="frame" x="42.5" y="96.5" width="49.5" height="34"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="done"/>
+                                        <connections>
+                                            <action selector="onDonePress:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="cUt-rj-jqr"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="5Qd-m9-Rav" firstAttribute="top" secondItem="0ae-hb-Elc" secondAttribute="top" constant="112" id="0sU-OI-afv"/>
+                            <constraint firstItem="5Qd-m9-Rav" firstAttribute="trailing" secondItem="0ae-hb-Elc" secondAttribute="trailing" constant="-7" id="EqE-ZB-rnj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QhX-cl-txY" secondAttribute="trailing" constant="25" id="FPM-ds-Vwz"/>
+                            <constraint firstItem="3Rv-my-gWR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c5v-7Z-beG"/>
+                            <constraint firstItem="3Rv-my-gWR" firstAttribute="top" secondItem="0ae-hb-Elc" secondAttribute="bottom" constant="24" id="knp-m8-9U4"/>
+                            <constraint firstItem="0ae-hb-Elc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ofM-al-unA"/>
+                            <constraint firstItem="0ae-hb-Elc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="smb-Eb-59b"/>
+                            <constraint firstItem="QhX-cl-txY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="yOa-hP-fYd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bodyImageView" destination="5Qd-m9-Rav" id="CNO-MO-TAG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="66.666666666666671" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dead_full_body" width="47.5" height="137.5"/>
+        <image name="forca" width="146" height="265"/>
+        <image name="refresh_icon" width="24" height="24"/>
+        <namedColor name="background">
+            <color red="0.95294117647058818" green="0.9137254901960784" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
