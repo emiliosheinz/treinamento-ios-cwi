@@ -19,8 +19,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forca" translatesAutoresizingMaskIntoConstraints="NO" id="0ae-hb-Elc">
                                 <rect key="frame" x="134" y="69" width="146" height="265"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dead_full_body" translatesAutoresizingMaskIntoConstraints="NO" id="5Qd-m9-Rav">
-                                <rect key="frame" x="225.5" y="181" width="47.5" height="137.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Qd-m9-Rav">
+                                <rect key="frame" x="229" y="181" width="44" height="35"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhX-cl-txY">
                                 <rect key="frame" x="365" y="69" width="24" height="24"/>
@@ -51,10 +51,17 @@
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="done"/>
                                         <connections>
                                             <action selector="onDonePress:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="cUt-rj-jqr"/>
+                                            <action selector="onTextFieldChange:" destination="BYZ-38-t0r" eventType="editingChanged" id="sFh-w0-xk2"/>
                                         </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wea-Cc-8jz">
+                                <rect key="frame" x="207" y="513.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="background"/>
@@ -62,7 +69,9 @@
                             <constraint firstItem="5Qd-m9-Rav" firstAttribute="top" secondItem="0ae-hb-Elc" secondAttribute="top" constant="112" id="0sU-OI-afv"/>
                             <constraint firstItem="5Qd-m9-Rav" firstAttribute="trailing" secondItem="0ae-hb-Elc" secondAttribute="trailing" constant="-7" id="EqE-ZB-rnj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QhX-cl-txY" secondAttribute="trailing" constant="25" id="FPM-ds-Vwz"/>
+                            <constraint firstItem="wea-Cc-8jz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vb8-qV-o4N"/>
                             <constraint firstItem="3Rv-my-gWR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c5v-7Z-beG"/>
+                            <constraint firstItem="wea-Cc-8jz" firstAttribute="top" secondItem="3Rv-my-gWR" secondAttribute="bottom" constant="25" id="io4-32-bhb"/>
                             <constraint firstItem="3Rv-my-gWR" firstAttribute="top" secondItem="0ae-hb-Elc" secondAttribute="bottom" constant="24" id="knp-m8-9U4"/>
                             <constraint firstItem="0ae-hb-Elc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ofM-al-unA"/>
                             <constraint firstItem="0ae-hb-Elc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="smb-Eb-59b"/>
@@ -71,6 +80,10 @@
                     </view>
                     <connections>
                         <outlet property="bodyImageView" destination="5Qd-m9-Rav" id="CNO-MO-TAG"/>
+                        <outlet property="guessLabel" destination="wea-Cc-8jz" id="DKq-jG-AOi"/>
+                        <outlet property="letterTextField" destination="vhR-sq-9Dp" id="ee5-tN-Ycb"/>
+                        <outlet property="maskedWordLabel" destination="XnB-vd-Uok" id="kHj-O4-krG"/>
+                        <outlet property="tipLabel" destination="7zJ-4b-CdZ" id="6gc-iz-BNb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -79,7 +92,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dead_full_body" width="47.5" height="137.5"/>
         <image name="forca" width="146" height="265"/>
         <image name="refresh_icon" width="24" height="24"/>
         <namedColor name="background">
