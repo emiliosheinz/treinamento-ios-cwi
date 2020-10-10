@@ -10,28 +10,34 @@ import UIKit
 public class MemoryGame {
     
     let cards: [Card]
-    var matchedCards: [Card]
-    var visibleCards: [Card]
+    var matchedCards: [Card] = [] {
+        didSet {            
+            if cards.count == matchedCards.count {
+                hasWon = true
+            }
+        }
+    }
+    var visibleCards: [Card] = []
+    var hasWon: Bool = false
     
     internal init() {
         self.cards = randomCardsArrayGenerator()
-        self.matchedCards = []
-        self.visibleCards = []
     }
     
-    func guessCard(at index: Int, collectionViewController: UICollectionView) {
-        if self.visibleCards.count == 2 {
-            
-            if self.visibleCards[0].imageName  == self.visibleCards[1].imageName {
-                self.matchedCards.append(contentsOf: self.visibleCards)
-            }
-            
+    func guessCard(at index: Int) {
+        if(self.visibleCards.count == 2) {
             self.visibleCards = []
-            collectionViewController.reloadData()
+            return
         }
         
         self.visibleCards.append(self.cards[index])
-        collectionViewController.reloadData()
+        
+        if self.visibleCards.count == 2 {
+            if self.visibleCards[0].imageName  == self.visibleCards[1].imageName {
+                self.matchedCards.append(contentsOf: self.visibleCards)
+                self.visibleCards = []
+            }
+        }
     }
     
 }

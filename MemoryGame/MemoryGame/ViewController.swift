@@ -26,6 +26,14 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return true
     }
 
+   
+}
+
+extension ViewController {
+    @IBAction func restartButtonPress(_ sender: Any) {
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return game.cards.count
     }
@@ -41,13 +49,22 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return cell
     }
     
+    var alertAction: UIAlertAction {
+       UIAlertAction(title: "Bacana, bora de novo", style: .default, handler: { _ in self.newGame()})
+   }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        game.guessCard(at: indexPath.item, collectionViewController: collectionViewController)
+        game.guessCard(at: indexPath.item)
+        self.collectionViewController.reloadData()
+        
+        if game.hasWon {
+            let alert = UIAlertController(title: "Boa, você terminou!", message: "Você precisou de X tentativas para finalizar o jogo.", preferredStyle: .alert)
+            alert.addAction(alertAction)
+            present(alert, animated: true, completion: nil)
+        }
     }
-}
-
-extension ViewController {
-    @IBAction func restartButtonPress(_ sender: Any) {
+    
+    func newGame() {
         self.game = MemoryGame()
         self.collectionViewController.reloadData()
     }
