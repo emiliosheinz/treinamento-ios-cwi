@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "2E7EBDD3-49A2-4617-AAC8-BA58C7FC8475"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "98C9261B-307C-47C6-8CA2-CB7D6AA96945"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ForcaTests/ForcaGameTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ForcaGameTests"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "98C9261B-307C-47C6-8CA2-CB7D6AA96945 - 34828a4129c38f31"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ForcaTests.ForcaGameTests.__deallocating_deinit"
+                  moduleName = "ForcaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emilioheinzmann/Documents/git/emilioheinz/treinamento-ios-cwi/Forca/ForcaTests/ForcaGameTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "98C9261B-307C-47C6-8CA2-CB7D6AA96945 - d8452c05a23164c9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ForcaTests.ForcaGameTests.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; ForcaTests.ForcaGameTests"
+                  moduleName = "ForcaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emilioheinzmann/Documents/git/emilioheinz/treinamento-ios-cwi/Forca/ForcaTests/ForcaGameTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "98C9261B-307C-47C6-8CA2-CB7D6AA96945 - e4d43819c24df6c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ForcaTests.ForcaGameTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; ForcaTests.ForcaGameTests"
+                  moduleName = "ForcaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emilioheinzmann/Documents/git/emilioheinz/treinamento-ios-cwi/Forca/ForcaTests/ForcaGameTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "119">
+               </Location>
+               <Location
+                  uuid = "98C9261B-307C-47C6-8CA2-CB7D6AA96945 - 39478e07b8de7b43"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ForcaTests.ForcaGameTests.__allocating_init(selector: ObjectiveC.Selector) -&gt; ForcaTests.ForcaGameTests"
+                  moduleName = "ForcaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emilioheinzmann/Documents/git/emilioheinz/treinamento-ios-cwi/Forca/ForcaTests/ForcaGameTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "98C9261B-307C-47C6-8CA2-CB7D6AA96945 - 4ed4171e48480009"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ForcaTests.ForcaGameTests.init(selector: ObjectiveC.Selector) -&gt; ForcaTests.ForcaGameTests"
+                  moduleName = "ForcaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emilioheinzmann/Documents/git/emilioheinz/treinamento-ios-cwi/Forca/ForcaTests/ForcaGameTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "119">
+               </Location>
+               <Location
+                  uuid = "98C9261B-307C-47C6-8CA2-CB7D6AA96945 - 7fb6639df6328718"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ForcaTests.ForcaGameTests.__allocating_init() -&gt; ForcaTests.ForcaGameTests"
+                  moduleName = "ForcaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emilioheinzmann/Documents/git/emilioheinz/treinamento-ios-cwi/Forca/ForcaTests/ForcaGameTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "98C9261B-307C-47C6-8CA2-CB7D6AA96945 - c4ef4610264edde2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ForcaTests.ForcaGameTests.init() -&gt; ForcaTests.ForcaGameTests"
+                  moduleName = "ForcaTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emilioheinzmann/Documents/git/emilioheinz/treinamento-ios-cwi/Forca/ForcaTests/ForcaGameTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "93">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

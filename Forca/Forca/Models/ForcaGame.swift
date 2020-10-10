@@ -29,23 +29,31 @@ class ForcaGame {
     
     internal init(word: String, tip: String) {
         self.tip = tip
-        self.word = word
+        self.word = word.comparable
         self.maskedWord = word.map { _ in "_"}.joined()
     }
     
     func tryLetter(letter: String) {
-        if(alreadyTriedLetters.contains(letter)) {
+        guard let informedLetter = letter.first?.comparable else {
             return
         }
         
-        alreadyTriedLetters.append(letter)
+        if(alreadyTriedLetters.contains(informedLetter)) {
+            return
+        }
         
-        guard word.contains(letter) else {
+        alreadyTriedLetters.append(informedLetter)
+        
+        guard word.contains(informedLetter) else {
             errors += 1
             return
         }
         
-        maskedWord = replaceUnderscoreWithLetter(replace: letter, in: maskedWord, with: word)
+        maskedWord = replaceUnderscoreWithLetter(replace: informedLetter, in: maskedWord, with: word)
+        
+        if word == maskedWord {
+            win = true
+        }
     }
     
 }
