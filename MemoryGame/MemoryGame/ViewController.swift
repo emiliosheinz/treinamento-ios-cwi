@@ -11,9 +11,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let landscapeRawValue = UIInterfaceOrientation.landscapeLeft.rawValue
+        UIDevice.current.setValue(landscapeRawValue, forKey: "orientation")
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return .landscapeLeft
     }
 
+    override var shouldAutorotate: Bool {
+        return true
+    }
 
 }
 
