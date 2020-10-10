@@ -28,11 +28,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onRefreshPress(_ sender: Any) {
-        index += 1
-        
-        if index == 5 {
-            index = 0
-        }
+        newGame()
     }
     
     @IBAction func onDonePress(_ sender: Any) {
@@ -48,13 +44,27 @@ extension ViewController {
     private func updateScreen() {
         tipLabel.text = "A dica é: \(game.tip)"
         maskedWordLabel.attributedText = game.maskedWord.spaced
-        guessLabel.attributedText = game.alreadyTriedLetters.joined().spaced
-        
+        guessLabel.attributedText = formatGuessedLetters()
+        letterTextField.text = ""
         updateImage()
         
         if game.lose {
-            
+            alertLoser()
+        } else if game.win {
+            alertWinner()
         }
+    }
+    
+    private func formatGuessedLetters() -> NSAttributedString {
+        game.alreadyTriedLetters.reduce(NSMutableAttributedString()) { (text, letter) in
+            if game.word.contains(letter) {
+                text.append(letter.green)
+            } else {
+                text.append(letter.red)
+            }
+            
+            return text
+        }.spaced
     }
     
     private func updateImage() {
@@ -90,6 +100,14 @@ extension ViewController {
     
     private func alertLoser() {
         let alert = UIAlertController(title: "Que pena, você errou!", message: "Pensa mais da próxima vez", preferredStyle: .alert)
+        alert.addAction(alertAction)
+        present(alert, animated: true, completion: nil)
+    }
+    
+    private func alertWinner() {
+        let alert = UIAlertController(title: "MAOE!", message: "Parabéns, vocês ganhou!", preferredStyle: .alert)
+        alert.addAction(alertAction)
+        present(alert, animated: true, completion: nil)
     }
 }
 

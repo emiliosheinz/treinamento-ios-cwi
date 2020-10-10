@@ -44,8 +44,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="???" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-sq-9Dp">
-                                        <rect key="frame" x="42.5" y="96.5" width="49.5" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vhR-sq-9Dp">
+                                        <rect key="frame" x="51" y="96.5" width="32" height="34"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" returnKeyType="done"/>
@@ -57,8 +57,14 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wea-Cc-8jz">
-                                <rect key="frame" x="207" y="513.5" width="0.0" height="0.0"/>
+                                <rect key="frame" x="207" y="559" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chutes anteriores:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQL-or-rfl">
+                                <rect key="frame" x="131.5" y="513.5" width="151.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -67,11 +73,13 @@
                         <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="5Qd-m9-Rav" firstAttribute="top" secondItem="0ae-hb-Elc" secondAttribute="top" constant="112" id="0sU-OI-afv"/>
+                            <constraint firstItem="wea-Cc-8jz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ARR-ML-X7G"/>
                             <constraint firstItem="5Qd-m9-Rav" firstAttribute="trailing" secondItem="0ae-hb-Elc" secondAttribute="trailing" constant="-7" id="EqE-ZB-rnj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QhX-cl-txY" secondAttribute="trailing" constant="25" id="FPM-ds-Vwz"/>
-                            <constraint firstItem="wea-Cc-8jz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Vb8-qV-o4N"/>
+                            <constraint firstItem="wea-Cc-8jz" firstAttribute="top" secondItem="jQL-or-rfl" secondAttribute="bottom" constant="25" id="Fm2-fd-UAR"/>
                             <constraint firstItem="3Rv-my-gWR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="c5v-7Z-beG"/>
-                            <constraint firstItem="wea-Cc-8jz" firstAttribute="top" secondItem="3Rv-my-gWR" secondAttribute="bottom" constant="25" id="io4-32-bhb"/>
+                            <constraint firstItem="jQL-or-rfl" firstAttribute="top" secondItem="3Rv-my-gWR" secondAttribute="bottom" constant="25" id="cpX-hM-lWA"/>
+                            <constraint firstItem="jQL-or-rfl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kGt-gO-CnE"/>
                             <constraint firstItem="3Rv-my-gWR" firstAttribute="top" secondItem="0ae-hb-Elc" secondAttribute="bottom" constant="24" id="knp-m8-9U4"/>
                             <constraint firstItem="0ae-hb-Elc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ofM-al-unA"/>
                             <constraint firstItem="0ae-hb-Elc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="smb-Eb-59b"/>
