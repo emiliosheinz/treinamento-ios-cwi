@@ -149,6 +149,7 @@
 		CF00D27D2531FE4C00AAD631 /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
+				CF00D32D2532569700AAD631 /* Extensions */,
 				CF00D2E625321BFC00AAD631 /* Views */,
 				CF00D2C52532098C00AAD631 /* Helpers */,
 				CF00D2B72532081200AAD631 /* Models */,
@@ -205,6 +206,13 @@
 				CF00D3052532253700AAD631 /* CollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CF00D32D2532569700AAD631 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

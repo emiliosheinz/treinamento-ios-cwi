@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    let game: MemoryGame = MemoryGame()
+    var game: MemoryGame = MemoryGame()
+    
+    @IBOutlet weak var collectionViewController: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,17 +33,23 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         
-        cell.cellImage.image = UIImage(named: game.cards[indexPath.item].imageName)
+        let currentImageName = game.cards[indexPath.item].imageName
+        let currentCard = game.cards[indexPath.item]
+        let imageName = currentCard.isIn(game.matchedCards) || currentCard.isIn(game.visibleCards) ? currentImageName : "hidden_card"
+        cell.cellImage.image = UIImage(named: imageName)
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item)
+        game.guessCard(at: indexPath.item, collectionViewController: collectionViewController)
     }
 }
 
 extension ViewController {
-    
+    @IBAction func restartButtonPress(_ sender: Any) {
+        self.game = MemoryGame()
+        self.collectionViewController.reloadData()
+    }
 }
 

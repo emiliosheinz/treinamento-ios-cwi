@@ -13,8 +13,8 @@ public func randomCardsArrayGenerator() -> [Card] {
     var cards:[Card] = []
     
     for image in cardsAvailableImages {
-        cards.append(Card(id: image, imageName: image))
-        cards.append(Card(id: image, imageName: image))
+        cards.append(Card(variation: 0, imageName: image))
+        cards.append(Card(variation: 1, imageName: image))
     }
     
     return cards.shuffled()
