@@ -22,6 +22,7 @@
 		CF00D2C7253209BF00AAD631 /* RandomCardsArrayGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00D2C6253209BF00AAD631 /* RandomCardsArrayGenerator.swift */; };
 		CF00D2E225320EAE00AAD631 /* RandomCardsArrayGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00D2E125320EAE00AAD631 /* RandomCardsArrayGeneratorTests.swift */; };
 		CF00D3062532253700AAD631 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF00D3052532253700AAD631 /* CollectionViewCell.swift */; };
+		CFB422E025332244009B0800 /* UICollectionViewCell+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB422DF25332244009B0800 /* UICollectionViewCell+Shadow.swift */; };
 		DE82E0FED4B510A39EB8842E /* Pods_MemoryGame_MemoryGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F5E39F30E8ECF545247709 /* Pods_MemoryGame_MemoryGameUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		CF00D2C6253209BF00AAD631 /* RandomCardsArrayGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCardsArrayGenerator.swift; sourceTree = "<group>"; };
 		CF00D2E125320EAE00AAD631 /* RandomCardsArrayGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCardsArrayGeneratorTests.swift; sourceTree = "<group>"; };
 		CF00D3052532253700AAD631 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CFB422DF25332244009B0800 /* UICollectionViewCell+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Shadow.swift"; sourceTree = "<group>"; };
 		D2B774F1E18B1F3A8BF9A4C9 /* Pods-MemoryGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryGameTests.debug.xcconfig"; path = "Target Support Files/Pods-MemoryGameTests/Pods-MemoryGameTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DCD042E8E5E739AAA70BF548 /* Pods-MemoryGame-MemoryGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoryGame-MemoryGameUITests.release.xcconfig"; path = "Target Support Files/Pods-MemoryGame-MemoryGameUITests/Pods-MemoryGame-MemoryGameUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F1DDE3A7DF2E20AE32DEF7BE /* Pods_MemoryGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemoryGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,13 +151,13 @@
 		CF00D27D2531FE4C00AAD631 /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
+				CF64F0C625331B0F00170E3B /* Controllers */,
 				CF00D32D2532569700AAD631 /* Extensions */,
 				CF00D2E625321BFC00AAD631 /* Views */,
 				CF00D2C52532098C00AAD631 /* Helpers */,
 				CF00D2B72532081200AAD631 /* Models */,
 				CF00D27E2531FE4C00AAD631 /* AppDelegate.swift */,
 				CF00D2802531FE4C00AAD631 /* SceneDelegate.swift */,
-				CF00D2822531FE4C00AAD631 /* ViewController.swift */,
 				CF00D2842531FE4C00AAD631 /* Main.storyboard */,
 				CF00D2872531FE4D00AAD631 /* Assets.xcassets */,
 				CF00D2892531FE4D00AAD631 /* LaunchScreen.storyboard */,
@@ -211,8 +213,17 @@
 		CF00D32D2532569700AAD631 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CFB422DF25332244009B0800 /* UICollectionViewCell+Shadow.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CF64F0C625331B0F00170E3B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CF00D2822531FE4C00AAD631 /* ViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,6 +452,7 @@
 				CF00D3062532253700AAD631 /* CollectionViewCell.swift in Sources */,
 				CF00D2C12532086500AAD631 /* Card.swift in Sources */,
 				CF00D2B92532083B00AAD631 /* MemoryGame.swift in Sources */,
+				CFB422E025332244009B0800 /* UICollectionViewCell+Shadow.swift in Sources */,
 				CF00D2812531FE4C00AAD631 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
