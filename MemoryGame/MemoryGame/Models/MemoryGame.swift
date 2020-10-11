@@ -19,20 +19,22 @@ public class MemoryGame {
     }
     var visibleCards: [Card] = []
     var hasWon: Bool = false
+    var numberOfPlays: Int = 0
     
     internal init() {
         self.cards = randomCardsArrayGenerator()
     }
     
     func guessCard(at index: Int) {
-        if(self.visibleCards.count == 2) {
+        if self.visibleCards.count == 2 {
             self.visibleCards = []
-            return
         }
         
         self.visibleCards.append(self.cards[index])
         
         if self.visibleCards.count == 2 {
+            self.numberOfPlays += 1
+            
             if self.visibleCards[0].imageName  == self.visibleCards[1].imageName {
                 self.matchedCards.append(contentsOf: self.visibleCards)
                 self.visibleCards = []

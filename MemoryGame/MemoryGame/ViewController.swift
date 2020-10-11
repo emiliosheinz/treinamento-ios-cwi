@@ -58,7 +58,7 @@ extension ViewController {
         self.collectionViewController.reloadData()
         
         if game.hasWon {
-            let alert = UIAlertController(title: "Boa, você terminou!", message: "Você precisou de X tentativas para finalizar o jogo.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Boa, você terminou!", message: "Você precisou de \(game.numberOfPlays) tentativas para finalizar o jogo.", preferredStyle: .alert)
             alert.addAction(alertAction)
             present(alert, animated: true, completion: nil)
         }
