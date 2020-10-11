@@ -73,6 +73,33 @@ class MemoryGameTests: QuickSpec {
                 }
             }
             
+            context("guess 2 cards and call hide visible and not matche cards") {
+                func guessTwoCards() {
+                    game.guessCard(at: 0)
+                    game.guessCard(at: 1)
+                }
+                
+                it("should clean up the number os visible cards") {
+                    guessTwoCards()
+                    
+                    game.hideVisibleAndNotMatchedCards()
+                    
+                    expect(game.visibleCards.count).to(equal(0))
+                }
+            }
+            
+            context("guess 1 card") {
+                it("should call guess callback") {
+                    var hasCalled = false
+                    
+                    game.guessCard(at: 0) { _ in
+                        hasCalled = true
+                    }
+                    
+                    expect(hasCalled).to(beTrue())
+                }
+            }
+            
         }
     }
 
