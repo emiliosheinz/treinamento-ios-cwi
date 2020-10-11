@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     var game: MemoryGame = MemoryGame()
+    var isShowingTwoCards = false
     
     @IBOutlet weak var playsLabel: UILabel!
     @IBOutlet weak var collectionViewController: UICollectionView!
@@ -60,26 +61,32 @@ extension ViewController {
             return
         }
         
-        guard game.visibleCards.count < 2 else {
-            game.hideVisibleAndNotMatchedCards()
-            self.collectionViewController.reloadData()
-            return
-        }
-        
-        game.guessCard(at: indexPath.item) { needsFlip in
-            
-            self.playsLabel.text = "Jogadas: \(self.game.numberOfPlays)"
-            
-            if needsFlip {
-                cell.flip(card: self.game.cards[indexPath.item]) {
+        if !isShowingTwoCards {
+            game.guessCard(at: indexPath.item) { needsFlip in
+                
+                self.playsLabel.text = "Jogadas: \(self.game.numberOfPlays)"
+                
+                if self.game.visibleCards.count == 2 {
+                    self.isShowingTwoCards = true
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                        self.isShowingTwoCards = false
+                        self.game.hideVisibleAndNotMatchedCards()
+                        self.collectionViewController.reloadData()
+                    }
+                }
+                
+                if needsFlip {
+                    cell.flip(card: self.game.cards[indexPath.item]) {
+                        self.collectionViewController.reloadData()
+                    }
+                } else {
                     self.collectionViewController.reloadData()
                 }
-            } else {
-                self.collectionViewController.reloadData()
-            }
-            
-            if self.game.hasWon {
-                self.showMessageForTheWinner()
+                
+                if self.game.hasWon {
+                    self.showMessageForTheWinner()
+                }
             }
         }
     }
