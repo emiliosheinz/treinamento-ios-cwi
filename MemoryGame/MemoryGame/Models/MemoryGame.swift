@@ -25,16 +25,12 @@ public class MemoryGame {
         self.cards = randomCardsArrayGenerator()
     }
     
-    func guessCard(at index: Int) -> Bool {
+    func guessCard(at index: Int, afterGessCallback: ((Bool) -> Void)? = nil) {
         var needsFlip = false
-        let wasInArray = !self.cards[index].isIn(self.visibleCards)
+        let wasInArray = self.cards[index].isIn(self.visibleCards) || self.cards[index].isIn(self.matchedCards)
         
-        if self.visibleCards.count == 2 {
-            self.visibleCards = []
-            needsFlip = true
-        }
-        
-        if wasInArray {
+        if !wasInArray {
+            self.cards[index].isHidden = false
             self.visibleCards.append(self.cards[index])
             needsFlip = true
         }
@@ -48,7 +44,17 @@ public class MemoryGame {
             }
         }
         
-        return needsFlip
+        if afterGessCallback != nil {
+            afterGessCallback!(needsFlip)
+        }
+    }
+    
+    func hideVisibleAndNotMatchedCards() {
+        self.visibleCards.forEach({ card in
+            card.isHidden = true
+        })
+        
+        self.visibleCards = []
     }
     
 }

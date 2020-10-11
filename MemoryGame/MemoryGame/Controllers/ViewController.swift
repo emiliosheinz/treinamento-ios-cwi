@@ -49,6 +49,7 @@ extension ViewController {
         let currentImageName = game.cards[indexPath.item].imageName
         let currentCard = game.cards[indexPath.item]
         let imageName = currentCard.isIn(game.matchedCards) || currentCard.isIn(game.visibleCards) ? currentImageName : "hidden_card"
+        
         cell.cellImage.image = UIImage(named: imageName)
         
         return cell.withShadow
@@ -59,19 +60,34 @@ extension ViewController {
             return
         }
         
-        let needsFlip = game.guessCard(at: indexPath.item)
-        self.playsLabel.text = "Jogadas: \(game.numberOfPlays)"
-        if needsFlip {
-            cell.flip() {
-                self.collectionViewController.reloadData()
-            }
+        guard game.visibleCards.count < 2 else {
+            game.hideVisibleAndNotMatchedCards()
+            self.collectionViewController.reloadData()
+            return
         }
         
-        if game.hasWon {
-            let alert = UIAlertController(title: "Boa, você terminou!", message: "Você precisou de \(game.numberOfPlays) tentativas para finalizar o jogo.", preferredStyle: .alert)
-            alert.addAction(alertAction)
-            present(alert, animated: true, completion: nil)
+        game.guessCard(at: indexPath.item) { needsFlip in
+            
+            self.playsLabel.text = "Jogadas: \(self.game.numberOfPlays)"
+            
+            if needsFlip {
+                cell.flip(card: self.game.cards[indexPath.item]) {
+                    self.collectionViewController.reloadData()
+                }
+            } else {
+                self.collectionViewController.reloadData()
+            }
+            
+            if self.game.hasWon {
+                self.showMessageForTheWinner()
+            }
         }
+    }
+    
+    func showMessageForTheWinner() {
+        let alert = UIAlertController(title: "Boa, você terminou!", message: "Você precisou de \(game.numberOfPlays) tentativas para finalizar o jogo.", preferredStyle: .alert)
+        alert.addAction(alertAction)
+        present(alert, animated: true, completion: nil)
     }
     
     func newGame() {

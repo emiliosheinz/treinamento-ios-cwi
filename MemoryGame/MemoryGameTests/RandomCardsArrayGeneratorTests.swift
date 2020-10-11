@@ -21,6 +21,22 @@ class RandomCardsArrayGeneratorTests: QuickSpec {
             it("should create an array with 10 of length") {
                 expect(cards.count).to(equal(10))
             }
+            
+            it("should add two cards of each image") {
+                var imagesDictionary: Dictionary<String, Int> = [:]
+                
+                cardsAvailableImages.forEach({ key in
+                    imagesDictionary[key] = 0
+                })
+                
+                cards.forEach({ card in
+                    imagesDictionary[card.imageName]! +=  1
+                })
+                
+                imagesDictionary.forEach({ _, value in
+                    expect(value).to(equal(2))
+                })
+            }
         }
     }
     

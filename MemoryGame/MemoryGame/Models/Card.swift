@@ -12,18 +12,15 @@ public class Card {
     let variation: Int
     let imageName: String
     let id: String
+    var isHidden: Bool = true
     
     internal init(variation: Int, imageName: String) {
         self.variation = variation
         self.imageName = imageName
         self.id = "\(imageName)_\(variation)"
-   }
+    }
     
-}
-
-extension Card {
     func isIn(_ cards: [Card]) -> Bool {
         return cards.contains(where: {_card in return self.id == _card.id})
     }
 }
-
