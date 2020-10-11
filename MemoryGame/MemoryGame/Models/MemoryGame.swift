@@ -25,12 +25,19 @@ public class MemoryGame {
         self.cards = randomCardsArrayGenerator()
     }
     
-    func guessCard(at index: Int) {
+    func guessCard(at index: Int) -> Bool {
+        var needsFlip = false
+        let wasInArray = !self.cards[index].isIn(self.visibleCards)
+        
         if self.visibleCards.count == 2 {
             self.visibleCards = []
+            needsFlip = true
         }
         
-        self.visibleCards.append(self.cards[index])
+        if wasInArray {
+            self.visibleCards.append(self.cards[index])
+            needsFlip = true
+        }
         
         if self.visibleCards.count == 2 {
             self.numberOfPlays += 1
@@ -40,6 +47,8 @@ public class MemoryGame {
                 self.visibleCards = []
             }
         }
+        
+        return needsFlip
     }
     
 }

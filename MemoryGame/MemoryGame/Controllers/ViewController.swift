@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     var game: MemoryGame = MemoryGame()
     
+    @IBOutlet weak var playsLabel: UILabel!
     @IBOutlet weak var collectionViewController: UICollectionView!
     
     @IBAction func restartButtonPress(_ sender: Any) {
@@ -58,9 +59,12 @@ extension ViewController {
             return
         }
         
-        game.guessCard(at: indexPath.item)
-        cell.flip() {
-            self.collectionViewController.reloadData()
+        let needsFlip = game.guessCard(at: indexPath.item)
+        self.playsLabel.text = "Jogadas: \(game.numberOfPlays)"
+        if needsFlip {
+            cell.flip() {
+                self.collectionViewController.reloadData()
+            }
         }
         
         if game.hasWon {
@@ -72,6 +76,7 @@ extension ViewController {
     
     func newGame() {
         self.game = MemoryGame()
+        self.playsLabel.text = "Jogadas: 0"
         self.collectionViewController.reloadData()
     }
 }
