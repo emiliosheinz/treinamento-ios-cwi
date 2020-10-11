@@ -54,8 +54,14 @@ extension ViewController {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell else {
+            return
+        }
+        
         game.guessCard(at: indexPath.item)
-        self.collectionViewController.reloadData()
+        cell.flip() {
+            self.collectionViewController.reloadData()
+        }
         
         if game.hasWon {
             let alert = UIAlertController(title: "Boa, você terminou!", message: "Você precisou de \(game.numberOfPlays) tentativas para finalizar o jogo.", preferredStyle: .alert)
