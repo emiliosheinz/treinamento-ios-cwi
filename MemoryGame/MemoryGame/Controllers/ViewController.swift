@@ -39,7 +39,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
            )
         }
         
-        let alert = UIAlertController(title: "Easteregg encontrado!", message: "Você gostaria de ativar o modo premium e ter acesso a diversas cartas diferenciadas?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "MAOE, EASTEREGG ENCONTRADO!", message: "Você gostaria de ativar o modo premium e ter acesso a diversas cartas diferenciadas?", preferredStyle: .alert)
         alert.addAction(noAction)
         alert.addAction(yesAction)
         present(alert, animated: true, completion: nil)
