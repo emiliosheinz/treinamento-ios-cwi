@@ -21,18 +21,16 @@ public class MemoryGame {
     private(set) var numberOfPlays: Int = 0
     private(set) var hasWon: Bool = false
     
-    internal init() {
-        self.cards = randomCardsArrayGenerator()
+    internal init(usePremiumCards: Bool = false) {
+        self.cards = randomCardsArrayGenerator(usePremiumCards: usePremiumCards)
     }
     
-    func guessCard(at index: Int, afterGessCallback: ((Bool) -> Void)? = nil) {
-        var needsFlip = false
+    func guessCard(at index: Int) -> Bool {
         let wasInArray = self.cards[index].isIn(self.visibleCards) || self.cards[index].isIn(self.matchedCards)
         
         if !wasInArray {
             self.cards[index].isHidden = false
             self.visibleCards.append(self.cards[index])
-            needsFlip = true
         }
         
         if self.visibleCards.count == 2 {
@@ -41,12 +39,11 @@ public class MemoryGame {
             if self.visibleCards[0].imageName  == self.visibleCards[1].imageName {
                 self.matchedCards.append(contentsOf: self.visibleCards)
                 self.visibleCards = []
+                return true
             }
         }
         
-        if afterGessCallback != nil {
-            afterGessCallback!(needsFlip)
-        }
+        return false
     }
     
     func hideVisibleAndNotMatchedCards() {

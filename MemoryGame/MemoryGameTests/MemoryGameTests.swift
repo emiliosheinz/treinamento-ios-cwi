@@ -88,18 +88,6 @@ class MemoryGameTests: QuickSpec {
                 }
             }
             
-            context("guess 1 card") {
-                it("should call guess callback") {
-                    var hasCalled = false
-                    
-                    game.guessCard(at: 0) { _ in
-                        hasCalled = true
-                    }
-                    
-                    expect(hasCalled).to(beTrue())
-                }
-            }
-            
         }
     }
 

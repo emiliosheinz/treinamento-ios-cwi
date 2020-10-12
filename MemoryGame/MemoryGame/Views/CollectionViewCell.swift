@@ -11,21 +11,17 @@ class CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cellImage: UIImageView!
 
-    func flip(card: Card,halfFlipCallback:@escaping () -> Void) {
+    func flip(card: Card) {
         
         UIView.transition(
             with: self,
             duration: 0.3,
-            options: .transitionFlipFromRight,
+            options: card.isHidden ? .transitionFlipFromLeft : .transitionFlipFromRight,
             animations: {
                 let imageName = card.isHidden ? "hidden_card" : card.imageName
                 self.cellImage.image =  UIImage(named: imageName)
             },
-            completion: { completed in
-                if completed {
-                    halfFlipCallback()
-                }
-            }
+            completion: nil
         )
     }
 }

@@ -10,12 +10,39 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     var game: MemoryGame = MemoryGame()
     var isShowingTwoCards = false
+    var visibleCells: Dictionary<Int, CollectionViewCell> = [:]
+    var isPremiumModeEnabled = false
     
     @IBOutlet weak var playsLabel: UILabel!
     @IBOutlet weak var collectionViewController: UICollectionView!
     
     @IBAction func restartButtonPress(_ sender: Any) {
         self.newGame()
+    }
+    
+    @IBAction func onSilvaoPress(_ sender: Any) {
+        var yesAction: UIAlertAction {
+           UIAlertAction(
+                title: "Sim",
+                style: .default,
+                handler: { _ in
+                    self.isPremiumModeEnabled = true
+                    self.newGame()
+                }
+           )
+        }
+        var noAction: UIAlertAction {
+           UIAlertAction(
+                title: "Não",
+                style: .default,
+                handler: nil
+           )
+        }
+        
+        let alert = UIAlertController(title: "Easteregg encontrado!", message: "Você gostaria de ativar o modo premium e ter acesso a diversas cartas diferenciadas?", preferredStyle: .alert)
+        alert.addAction(noAction)
+        alert.addAction(yesAction)
+        present(alert, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -38,7 +65,7 @@ extension ViewController {
     
     var alertAction: UIAlertAction {
        UIAlertAction(title: "Bacana, bora de novo", style: .default, handler: { _ in self.newGame()})
-   }
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return game.cards.count
@@ -60,33 +87,40 @@ extension ViewController {
         guard let cell = collectionView.cellForItem(at: indexPath) as? CollectionViewCell else {
             return
         }
+        let wasInMatchdCardsArray = game.cards[indexPath.item].isIn(game.matchedCards)
+        let wasInVisibleCardsArray = game.cards[indexPath.item].isIn(game.visibleCards)
+        
         
         if !isShowingTwoCards {
-            game.guessCard(at: indexPath.item) { needsFlip in
-                
-                self.playsLabel.text = "Jogadas: \(self.game.numberOfPlays)"
-                
-                if self.game.visibleCards.count == 2 {
-                    self.isShowingTwoCards = true
+            let hasMatched = game.guessCard(at: indexPath.item)
+
+            playsLabel.text = "Jogadas: \(self.game.numberOfPlays)"
+
+            if game.visibleCards.count == 2 {
+                isShowingTwoCards = true
+
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    self.isShowingTwoCards = false
+                    self.game.hideVisibleAndNotMatchedCards()
                     
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-                        self.isShowingTwoCards = false
-                        self.game.hideVisibleAndNotMatchedCards()
-                        self.collectionViewController.reloadData()
-                    }
+                    self.visibleCells.forEach({ key, cell in
+                        cell.flip(card: self.game.cards[key])
+                    })
+                    self.visibleCells = [:]
                 }
+            }
+
+            if !wasInMatchdCardsArray && !wasInVisibleCardsArray {
+                cell.flip(card: game.cards[indexPath.item])
+                visibleCells[indexPath.item] = cell
                 
-                if needsFlip {
-                    cell.flip(card: self.game.cards[indexPath.item]) {
-                        self.collectionViewController.reloadData()
-                    }
-                } else {
-                    self.collectionViewController.reloadData()
+                if hasMatched {
+                    visibleCells = [:]
                 }
-                
-                if self.game.hasWon {
-                    self.showMessageForTheWinner()
-                }
+            }
+
+            if game.hasWon {
+                showMessageForTheWinner()
             }
         }
     }
@@ -98,7 +132,7 @@ extension ViewController {
     }
     
     func newGame() {
-        self.game = MemoryGame()
+        self.game = MemoryGame(usePremiumCards: self.isPremiumModeEnabled)
         self.playsLabel.text = "Jogadas: 0"
         self.collectionViewController.reloadData()
     }
