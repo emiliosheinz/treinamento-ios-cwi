@@ -10,16 +10,16 @@ import UIKit
 public class MemoryGame {
     
     let cards: [Card]
-    var matchedCards: [Card] = [] {
+    private(set) var matchedCards: [Card] = [] {
         didSet {            
             if cards.count == matchedCards.count {
                 hasWon = true
             }
         }
     }
-    var visibleCards: [Card] = []
-    var hasWon: Bool = false
-    var numberOfPlays: Int = 0
+    private(set) var visibleCards: [Card] = []
+    private(set) var numberOfPlays: Int = 0
+    private(set) var hasWon: Bool = false
     
     internal init() {
         self.cards = randomCardsArrayGenerator()
