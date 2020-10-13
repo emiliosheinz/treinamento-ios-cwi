@@ -1,0 +1,1064 @@
+{
+    "cafes": [
+        { 
+            "id": 1,
+            "nome": "Hawaii Kona",
+            "descricao": "CAFÉ FRUTADO, EQUILIBRADO E RARO",
+            "intensidade": 5,
+            "precoUnitario": 6.00,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13334877011998/Desktop-Standard-80x80.png",
+            "medidas": [
+                "espresso"
+            ],
+            "origem": "Hoje, o café Hawaii Kona é produzido por mais de 600 fazendas, a maioria delas familiares e cada uma ocupando quase dois hectares de terra. Estas condições especiais significam que todos agricultores conhecem os seus cafeeiros \"como a palma da sua mão\".",
+            "torrefacao": "Esse café passou por um processo de torra média que ajudou a chegar na intensidade ideal para que suas notas mais frutadas fossem valorizadas na xícara.",
+            "perfilAromatico": "Hawaii Kona apresenta notas frutadas e uma textura mais sedosa, ganhando um toque de nozes que ajuda a compor um café de perfil mais equilibrado, agradando todos os paladares."
+        },
+        { 
+            "id": 2,
+            "nome": "Aged Sumatra",
+            "descricao": "CAFÉ ARTESANAL, APRIMORADO PELO TEMPO",
+            "intensidade": 7,
+            "precoUnitario": 4.00,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13415712784414/C-0625-Responsive-Standard-80x80.png",
+            "medidas": [
+                "espresso", "lungo"
+            ],
+            "origem": "No alto da montanha Gayo, na província de Aceh, na ilha de Sumatra, os agricultores praticam o método giling basah para processar os grãos de café. Durante 3 anos, os grãos são estocados em sacos de juta respiráveis, perdendo e ganhando umidade seguindo o ritmo da natureza.",
+            "torrefacao": "Esse café é separado em dois lotes para garantir um perfil tão rico. A primeira metade dos grãos passa por uma torra mais intensa e curta, o que ajuda a acentuar as características criadas no processo de envelhecimento: as notas amadeiradas. Já a segunda metade, é torrada por mais tempo resultando em uma textura mais aveludada.",
+            "perfilAromatico": "A combinação do método gilling basah com o envelhecimento de três anos, desenvolve um perfil único e distinto – um café amadeirado com notas de especiarias e finalização de cacau e caramelo."
+        },
+        { 
+            "id": 3,
+            "nome": "India",
+            "descricao": "CAFÉ COM ROBUSTA DE MONÇÕES",
+            "intensidade": 11,
+            "precoUnitario": 2.80,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10840367792158/C-0359-India-80x80.png",
+            "medidas": [
+                "espresso", "lungo"
+            ],
+            "origem": "Mix de grãos Arábica e Robusta Indianos",
+            "torrefacao": "Por meio da torra separada de grãos conseguimos manter as distintas características de grãos Arábica e Robusta.",
+            "perfilAromatico": "Os grãos de café Robusta Monsoon passam meses expostos aos ventos das Monções. Esse blend é um café complexo, encorpado e aromático, com notas amadeiradas e de especiarias."
+        },
+        { 
+            "id": 4,
+            "nome": "Indonesia",
+            "descricao": "CAFÉ COM ARÁBICA NO MÉTODO DE DESCASCAMENTO ÚMIDO",
+            "intensidade": 8,
+            "precoUnitario": 2.80,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10820727865374/C-0360-Indonesia-80x80.png",
+            "medidas": [
+                "espresso", "lungo"
+            ],
+            "origem": "100% Arábica Indonésio",
+            "torrefacao": "Torra média, os grãos de cafés da Sumatra, torrados separadamente, trazem uma boa complexidade aromática na xícara",
+            "perfilAromatico": "Métodos especiais de descascamento úmido dos frutos são usados no processamento desse café Arábica, resultando numa textura rica, notas aromáticas de tabaco curado, folhas e madeira verde"
+        },
+        { 
+            "id": 5,
+            "nome": "Colombia",
+            "descricao": "CAFÉ COM ARÁBICA DE COLHEITA TARDIA",
+            "intensidade": 6,
+            "precoUnitario": 2.80,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10842190675998.png",
+            "medidas": [
+                "espresso", "lungo"
+            ],
+            "origem": "100% Arábica Colombiano",
+            "torrefacao": "Torra mais leve e rápida preserva notas equilibradas e delicadas desses grãos colombianos",
+            "perfilAromatico": "Os grãos Arábicas deste café são colhidos tardiamente num processo cuidadoso que traz características marcantes de frutas vermelhas, com destaque para groselha e framboesa"
+        },
+        { 
+            "id": 6,
+            "nome": "Nicaragua",
+            "descricao": "CAFÉ COM ARÁBICA \"BLACK-HONEY\"",
+            "intensidade": 5,
+            "precoUnitario": 2.80,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10838071672862/C-0362-nicaragua-80x80.png",
+            "medidas": [
+                "espresso", "lungo"
+            ],
+            "origem": "100% Arábica Nicaraguense",
+            "torrefacao": "Por meio da torra separada de grãos conseguimos manter o equilíbrio ideal aos grãos da Nicarágua",
+            "perfilAromatico": "Os grãos de café Arábica obtidos pelo processo meticuloso “Black- honey” trazem um corpo envolvente, textura acetinada com notas cereais doces"
+        },
+        { 
+            "id": 7,
+            "nome": "Ethiopia",
+            "descricao": "CAFÉ COM ARÁBICA DE SECAGEM NATURAL",
+            "intensidade": 4,
+            "precoUnitario": 2.80,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10831332802590/C-0363-Ethiopia-80x80.png",
+            "medidas": [
+                "espresso", "lungo"
+            ],
+            "origem": "100% Arábica Etíope",
+            "torrefacao": "Torra mais leve e rápida preserva notas vivas e delicadas desses grãos etíopes",
+            "perfilAromatico": "O método de processamento natural dos grãos traz um sabor único e um café bastante aromático, floral e vibrante. Esse Arábica apresenta delicadas notas de frutas e flor de Laranjeira"
+        },
+        { 
+            "id": 8,
+            "nome": "Napoli",
+            "descricao": "CAFÉ EXCEPCIONALMENTE TORRADO E CREMOSO",
+            "intensidade": 13,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12807335641118/Desktop-Standard-80x80.png",
+            "medidas": [
+                "ristretto", "espresso"
+            ],
+            "origem": "Criamos o Ispirazione Napoli com uma mistura de grãos Robusta do Uganda com um toque de Arábica da América do Sul. Selecionamos cuidadosamente cafés que resistem à intensa torrefação que essa mistura exige - cafés arrojados que desenvolveriam aromas, gostos e texturas arenosos e bonitos, que refletem a história e as tradições profundas de Nápoles.",
+            "torrefacao": "É preciso muita habilidade para torrar café com a intensidade que se fazem em Nápoles. À medida que torramos o café em graus extremos, uma fração de segundo pode significar a diferença entre uma xícara agradavelmente intensa a uma falha carbonizada. É por isso que começamos com o grão Robusta, que é particularmente denso e rico em nutrientes, permitindo que o desenvolvamos por mais tempo antes que ele queime.",
+            "perfilAromatico": "O Ispirazione Napoli presta homenagem aos espressos curtos, fortes e escuros desta cidade costeira do sul da Itália. É uma xícara aveludada e cremosa, com um corpo extremamente espesso e um agradável amargor no retrogosto."
+        },
+        { 
+            "id": 9,
+            "nome": "Palermo Kazaar",
+            "descricao": "CAFÉ EXCEPCIONALMENTE INTENSO E LICOROSO",
+            "intensidade": 12,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12839055949854/Desktop-Standard-80x80.png",
+            "medidas": [
+                "ristretto", "espresso"
+            ],
+            "origem": "Este não é um café Ristretto tradicional. O Ispirazione Palermo Kazaar é a descoberta para quem deseja ir além das expectativas. Sua intensidade audaciosa é resultado da mistura de três cafés diferentes. Tradicionalmente, recorreríamos apenas ao Robusta não lavado para trazer a força bruta. No entanto, o nosso Robusta lavado é o segredo para transformar o Ispirazione Palermo Kazaar em um café com aroma puro e textura cremosa.",
+            "torrefacao": "Juntos, o Arábica e o Robusta se harmonizam neste Espresso. Você desfrutará de um amargor audacioso e de notas picantes em um café com corpo espesso e licoroso.",
+            "perfilAromatico": "Juntos, o Arábica e o Robusta se harmonizam neste Espresso. Você desfrutará de um amargor audacioso e de notas picantes em um café com corpo espesso e licoroso."
+        },
+        { 
+            "id": 10,
+            "nome": "Ristretto Italiano",
+            "descricao": "CAFÉ PODEROSO E CONTRASTANTE",
+            "intensidade": 10,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12807617347614/Desktop-Standard-80x80.png",
+            "medidas": [
+                "ristretto", "espresso"
+            ],
+            "origem": "O Ispirazione Ristretto Italiano é uma sofisticada receita de cafés: Arábica do Brasil, para criar uma base neutra; um toque especial de Robusta do sul da Índia; e os melhores Arábicas da América do Sul e do leste da África para trazer uma deliciosa nota de fruta fresca.",
+            "torrefacao": "Com o split roasting, é possível sentir o que cada café leva para a xícara. O Robusta, que passa por uma longa torrefação, dá ao NIspirazione Ristretto Italiano corpo, notas de torrado e o amargor de cacau. Já os Arábicas passam por uma rápida torra e completam o Ristretto com acidez e deliciosas notas frutadas.",
+            "perfilAromatico": "Um café intenso e torrado, com notas frutadas e leve acidez. Extraído na forma clássica, em 25 ml, você descobre que napolitanos estão certos quando dizem que menos realmente pode ser mais."
+        },
+        { 
+            "id": 11,
+            "nome": "Firenze Arpeggio",
+            "descricao": "CAFÉ INTENSO E CREMOSO",
+            "intensidade": 9,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12836992745502/Desktop-Standard-80x80.png",
+            "medidas": [
+                "ristretto", "espresso"
+            ],
+            "origem": "O Ispirazione Firenze Arpeggio é um blend dos melhores Arábicas da América Latina. O mais importante é o Arábica da Costa Rica, um café com deliciosas notas de malte.",
+            "torrefacao": "A torrefação intensa dos grãos desenvolve as características de cada um dos cafés que compõem o blend do Ispirazione Firenze Arpeggio. O aroma maltado dos Arábicas latinos se transforma em notas de cacau e dá corpo a este Espresso.",
+            "perfilAromatico": "O Ispirazione Firenze Arpeggio é um café denso e cremoso, com fortes notas de torrado e de cacau."
+        },
+        { 
+            "id": 12,
+            "nome": "Venezia",
+            "descricao": "CAFÉ DENSO E HARMONIOSO",
+            "intensidade": 8,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12836853973022/Desktop-Standard-2000x2000.png",
+            "medidas": [
+                "ristretto", "espresso"
+            ],
+            "origem": "Uma das maiores importações de café da Itália é o Arábica brasileiro, por isso nossos especialistas começaram a receita do Ispirazione Venezia por estes grãos. Em seguida, misturaram com os Arábicas crescidos da Colômbia, por seu perfil maltado e frutado, que se desenvolve maravilhosamente durante a torrefação, finalizando tudo com um toque de Robusta lavada da África para dar um toque extra. Esses elementos se juntam revelando uma xícara delicada e harmoniosa, fiel à tradição veneziana.",
+            "torrefacao": "Esta cidade comercial do norte não é apenas habilidosa em misturar grãos de café, mas também em torrar. A torrefação do café tende a ser mais leve no norte do país. É por isso que demos ao café Ispirazione Venezia uma torra média, mas ainda assim de corpo denso. O Ispirazione Venezia provoca uma sensação na boca arredondada e leve acidez com apenas uma pitada de amargor.",
+            "perfilAromatico": "O Ispirazione Venezia é um café harmonioso e aromático que lembra os grãos de café frescos da torrefadora - levando você de volta no tempo para os primeiros dias do comércio de café da Itália. Sua torra mais leve mantém os aromas delicados intensamente presentes ao desenvolver seu corpo denso. Em Venezia, você não pode perder a fragrância de cereais e as notas de caramelo doce."
+        },
+        { 
+            "id": 13,
+            "nome": "Roma",
+            "descricao": "CAFÉ ENCORPADO E BALANCEADO",
+            "intensidade": 8,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12839352893470/Desktop-Standard-2000x2000.png",
+            "medidas": [
+                "ristretto", "espresso"
+            ],
+            "origem": "O Arábica e o Robusta do Brasil dão força a esse café. Já o Arábica do México, lavado e cultivado nas altitudes elevadas Ixhuatlán, traz delicadeza. Esse café é cultivado em solos vulcânicos ricos e fertéis e, depois, é processado com muito cuidado: os produtores secam o café no que eles chamam de “leitos elevados de secagem” para protegê-lo das chuvas.",
+            "torrefacao": "A torrefação leve e a moagem fina dão requinte a esse café. Esses dois fatores também tornam o Ispirazione Roma um café forte e suave ao mesmo tempo.",
+            "perfilAromatico": "Há um equilíbrio sutil entre a força do grau de torrefação, a intensidade das notas amadeiradas e de cereais e uma acidez refinada. O Ispirazione Roma é o café ideal para quem busca um Espresso agradável e elegante."
+        },
+        { 
+            "id": 14,
+            "nome": "Genova Livanto",
+            "descricao": "CAFÉ REDONDO E BALANCEADO",
+            "intensidade": 6,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12839365705758/Desktop-Standard-2000x2000.png",
+            "medidas": [
+                "espresso"
+            ],
+            "origem": "Um café Arábica do Brasil muito acessível serve de base para criar o Ispirazione Genova Livanto. Encontramos Arábicas conceituados cultivados em altitudes elevadas na Guatemala e na Colômbia que se harmonizam com o Arábica do Brasil. Escolhemos esses cafés devido aos perfis maltados e frutados que se desenvolvem perfeitamente durante o processo de torra.",
+            "torrefacao": "A torra destes Arábicas durante um tempo relativamente longo em temperaturas médias transforma os aromas frutados em notas de caramelo e cereal torrado. Isso confere ao Ispirazione Genova Livanto aquela sensação harmonizada na boca, com acidez, doçura e amargor em total sintonia. A moagem média também ajuda a dar esse equilíbrio.",
+            "perfilAromatico": "O blend harmonioso do Ispirazione Genova Livanto faz você se lembrar dos grãos de café que acabaram de ser torrados. Seus aromas de caramelo e cereais torrados surpreendem em todos os momentos."
+        },
+        { 
+            "id": 15,
+            "nome": "Firenze Arpeggio Decaffeinato",
+            "descricao": "CAFÉ INTENSO E CREMOSO DESCAFEINADO",
+            "intensidade": 9,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13088659963934/arpeggio-decaf.png",
+            "medidas": [
+                "ristretto", "espresso"
+            ],
+            "origem": "O Ispirazione Firenze Arpeggio Decaffeinato é um blend dos melhores Arábicas da América Latina. O mais importante é o Arábica da Costa Rica, um café com deliciosas notas de malte.",
+            "torrefacao": "A torrefação intensa dos grãos desenvolve as características de cada um dos cafés que compõem o blend do Ispirazione Firenze Arpeggio Decaffeinato. O aroma maltado dos Arábicas latinos se transforma em notas de cacau e dá corpo a este Espresso.",
+            "perfilAromatico": "O Ispirazione Firenze Arpeggio Decaffeinato é um café denso e cremoso, com fortes notas de torrado e de cacau."
+        },
+        { 
+            "id": 16,
+            "nome": "Ristretto Italiano Decaffeinato",
+            "descricao": "CAFÉ PODEROSO E CONTRASTANTE DESCAFEINADO",
+            "intensidade": 10,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13088645775390/ristreto-decafv2.png",
+            "medidas": [
+                "ristretto", "espresso"
+            ],
+            "origem": "O Ispirazione Ristretto Italiano Decaffeinato é uma sofisticada receita de cafés: Arábica do Brasil, para criar uma base neutra; um toque especial de Robusta do sul da Índia; e os melhores Arábicas da América do Sul e do leste da África para trazer uma deliciosa nota de fruta fresca.",
+            "torrefacao": "Com o split roasting, é possível sentir o que cada café leva para a xícara. O Robusta, que passa por uma longa torrefação, dá ao Ispirazione Ristretto Italiano Decaffeinato corpo, notas de torrado e o amargor de cacau. Já os Arábicas passam por uma rápida torra e completam o Ristretto com acidez e deliciosas notas frutadas.",
+            "perfilAromatico": "Um café intenso e torrado, com notas frutadas e leve acidez. Extraído na forma clássica, em 25 ml, você descobre que napolitanos estão certos quando dizem que menos realmente pode ser mais."
+        },
+        { 
+            "id": 17,
+            "nome": "Volluto",
+            "descricao": "CAFÉ ADOCICADO E LEVE",
+            "intensidade": 4,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386858278942/C-0039-2000x2000.png",
+            "medidas": [
+                "espresso"
+            ],
+            "origem": "Os cafés Arábicas do Brasil e da Colômbia que fazem parte deste blend são cafés sustentáveis há muito tempo e dão ao Volluto uma verdadeira harmonia. Os produtores fazem parte do grupo do Programa AAA e têm cuidados especiais com o café e o meio ambiente. Um café brasileiro processado naturalmente dá ao Volluto o perfil equilibrado — o ousado frescor torna-se menos intenso porque a safra colhida e processada é colocada para descansar e amadurecer.",
+            "torrefacao": "O Volluto passa por uma torrefação média — não muito quente nem muito longa — e recebe uma moagem média para manter tudo em harmonia. Essa torrefação transforma as notas de cereais do café do Brasil em notas de biscoito doce e mantém presentes as notas frutadas do café da Colômbia.",
+            "perfilAromatico": "Como um brioche fresco que acabou de sair do forno, o Nespresso Volluto tem um perfume irresistível e notas deliciosas de biscoito. O café colombiano usado no blend traz as notas de frutas vermelhas frescas, que dão ainda mais vida ao blend — como um incrível dia de verão."
+        },
+        { 
+            "id": 18,
+            "nome": "Cosi",
+            "descricao": "CAFÉ SUAVE E LEVEMENTE TORRADO",
+            "intensidade": 4,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386856312862/C-0004-2000x2000.png",
+            "medidas": [
+                "espresso"
+            ],
+            "origem": "O Nespresso Cosi foi criado para ser seu café clássico. A base do Cosi é feita com um café Arábica cultivado em altitudes elevadas nas montanhas da Costa Rica. Os cafés desse local têm notas de cereais doces. Um toque do Arábica do Quênia dá mais vida ao blend com o delicioso e intenso aroma de frutas vermelhas.",
+            "torrefacao": "Nossos torrefadores submetem esses cafés da América Latina e do leste da África à moagem e à torrefação leves, o que garante que toda a essência dos Arábicas continue viva dentro da cápsula de Cosi.",
+            "perfilAromatico": "Na xícara, você sente uma combinação delicada e equilibrada de aromas frutados e notas de cereais levemente torrados. O Cosi tem baixo amargor, torrefação leve e é pouco encorpado."
+        },
+        { 
+            "id": 19,
+            "nome": "Linizio Lungo",
+            "descricao": "CAFÉ SUAVE E HARMONIZADO",
+            "intensidade": 4,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386858541086/C-0057-2000x2000.png",
+            "medidas": [
+                "lungo"
+            ],
+            "origem": "Essa cápsula laranja de café Nespresso é um blend de cafés Arábicas de duas das maiores origens de café — Brasil e Colômbia. A harmonia equilibrada do Nespresso Linizio Lungo é criada pelos cafés de colheita manual que são cuidadosamente processados, sempre levando em conta o aroma final. Primeiro, a polpa é retirada do café Bourbon vermelho e amarelo do Brasil. Depois, os grãos de café são secos com a mucilagem antes de serem processados. Isso possibilitará que o grão fique adocicado.",
+            "torrefacao": "O café do Brasil é levemente torrado, o que preserva a suavidade e mantém intactas todas as notas de cereais maltados. Os grãos de café da Colômbia lavados passam por uma torrefação curta para liberar todos os seus aromas mas refinados. Uma moagem fina agrega um toque de intensidade a esse café Lungo harmonioso.",
+            "perfilAromatico": "O blend de cafés Arábica do Linizio Lungo é extraordinariamente suave e harmonizado. Não deixe de experimentar as notas agradáveis de cereais maltados que brilham neste blend como a luz do sol na América do Sul. É a alegria do amanhecer."
+        },
+        { 
+            "id": 20,
+            "nome": "Vivalto Lungo",
+            "descricao": "CAFÉ COMPLEXO E BALANCEADO",
+            "intensidade": 4,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386858082334/C-0038-2000x2000.png",
+            "medidas": [
+                "lungo"
+            ],
+            "origem": "Um dos cafés deste blend de cafés Arábica vem do Brasil, da região do Cerrado. Ele é processado naturalmente, ou seja, após a colheita, as cerejas de café são espalhadas para secarem ao sol. Isso dá estrutura e equilíbrio natural ao Vivalto Lungo. O café do Cerrado é conhecido por seu aroma típico: harmonizado, notas de frutos secos e baixa acidez. Adicionar o Arábica da Colômbia cultivado em altitudes elevadas traz requinte e uma acidez intensa.",
+            "torrefacao": "O café do Brasil passa por uma torrefação curta e alta, o que desenvolve o grau de torrefação clássico do Vivalto Lungo. Uma torra mais leve nos cafés lavados possibilita manter os aromas mais refinados.",
+            "perfilAromatico": "A cápsula azul de café Nespresso Vivalto Lungo é um café com torrefação sedutora. Você sentirá o equilíbrio perfeito entre as notas de cereais torrados e as notas florais radiantes."
+        },
+        { 
+            "id": 21,
+            "nome": "Volluto Decaffeinato",
+            "descricao": "CAFÉ ADOCICADO E LEVE DESCAFEINADO",
+            "intensidade": 4,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13057317896222/voll-decafv2-1-.png",
+            "medidas": [
+                "espresso"
+            ],
+            "origem": "Os cafés Arábicas do Brasil e da Colômbia que fazem parte deste blend são cafés sustentáveis há muito tempo e dão ao Volluto Decaffeinato uma verdadeira harmonia. Os produtores fazem parte do grupo do Programa AAA e têm cuidados especiais com o café e o meio ambiente. Um café brasileiro processado naturalmente dá ao Volluto Decaffeinato o perfil equilibrado — o ousado frescor torna-se menos intenso porque a safra colhida e processada é colocada para descansar e amadurecer.",
+            "torrefacao": "O Volluto Decaffeinato passa por uma torrefação média — não muito quente nem muito longa — e recebe uma moagem média para manter tudo em harmonia. Essa torrefação transforma as notas de cereais do café do Brasil em notas de biscoito doce e mantém presentes as notas frutadas do café da Colômbia.",
+            "perfilAromatico": "Como um brioche fresco que acabou de sair do forno, o Nespresso Volluto Decaffeinato tem um perfume irresistível e notas deliciosas de biscoito. O café colombiano usado no blend traz as notas de frutas vermelhas frescas, que dão ainda mais vida ao blend — como um incrível dia de verão."
+        },
+        { 
+            "id": 22,
+            "nome": "Vivalto Lungo Decaffeinato",
+            "descricao": "CAFÉ ADOCICADO E LEVE DESCAFEINADO",
+            "intensidade": 4,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13057322680350/vivalto-decafv2-1-.png",
+            "medidas": [
+                "lungo"
+            ],
+            "origem": "Um dos cafés deste blend de cafés Arábica vem do Brasil, da região do Cerrado. Ele é processado naturalmente, ou seja, após a colheita, as cerejas de café são espalhadas para secarem ao sol. Isso dá estrutura e equilíbrio natural ao Vivalto Lungo Decaffeinato. O café do Cerrado é conhecido por seu aroma típico: harmonizado, notas de frutos secos e baixa acidez. Adicionar o Arábica da Colômbia cultivado em altitudes elevadas traz requinte e uma acidez intensa.",
+            "torrefacao": "O café do Brasil passa por uma torrefação curta e alta, o que desenvolve o grau de torrefação clássico do Vivalto Lungo Decaffeinato. Uma torra mais leve nos cafés lavados possibilita manter os aromas mais refinados.",
+            "perfilAromatico": "A cápsula azul de café Nespresso Vivalto Lungo Decaffeinato é um café com torrefação sedutora. Você sentirá o equilíbrio perfeito entre as notas de cereais torrados e as notas florais radiantes."
+        },
+        { 
+            "id": 23,
+            "nome": "Capriccio",
+            "descricao": "CAFÉ COMPLEXO E DIFERENCIADO",
+            "intensidade": 5,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386856116254/C-0003-2000x2000.png",
+            "medidas": [
+                "espresso"
+            ],
+            "origem": "O Capriccio é um blend de Arábicas da América do Sul com um simples toque de Robusta, o que dá bastante intensidade a este café. Os Arábicas cultivados em altitudes elevadas são conhecidos pela acidez harmoniosa. Eles se equilibram perfeitamente com um Arábica do Brasil para criar o rico blend do Capriccio.",
+            "torrefacao": "Os cafés deste blend passam por uma torrefação leve para preservar a acidez e as notas intensas de cereal. A torra leve também cria o rico perfil do Capriccio.",
+            "perfilAromatico": "O Capriccio é um café Espresso intenso e surpreendentemente refrescante. Tem leve acidez e aromas refinados de cereais."
+        },
+        { 
+            "id": 24,
+            "nome": "Fortissio Lungo",
+            "descricao": "CAFÉ ESTRUTURADO E ENCORPADO",
+            "intensidade": 8,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386856902686/C-0014-2000x2000.png",
+            "medidas": [
+                "lungo"
+            ],
+            "origem": "Esta cápsula de café Nespresso é um blend de cafés Arábicas. E o que serve de base para o Fortissio Lungo é o Monsooned Malabar. Na época das navegações, os cafés indianos adquiriam um aroma extravagante de ar oceânico perto do Cabo da Boa Esperança. Hoje, recriamos essa acidez suave e o aroma encorpado armazenando o café durante meses na costa sudoeste da Índia.",
+            "torrefacao": "O Arábica das monções passa por uma torrefação mais alta para ficar encorpado e aperfeiçoar suas notas de cereais. Com a torrefação mais leve do café da Colômbia lavado, todos os aromas clássicos e mais refinados permanecem em equilíbrio no Fortissio Lungo. Uma moagem muito específica mantém a suavidade e harmonia desse café Lungo.",
+            "perfilAromatico": "A complexidade da cápsula Fortissio Lungo está no equilíbrio das origens de café, nos métodos distintos de processamento e nas torrefações diferentes. Notas de cereais doces e de malte torrado contrastam bem com um toque de acidez e amargor intenso neste café Lungo."
+        },
+        { 
+            "id": 25,
+            "nome": "Envivo Lungo",
+            "descricao": "CAFÉ POTENTE E CARAMELIZADO",
+            "intensidade": 9,
+            "precoUnitario": 2.40,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386863685662/C-0210-2000x2000.png",
+            "medidas": [
+                "lungo"
+            ],
+            "origem": "Para trazer a força desejada, escolhemos o café Arábica indiano processado naturalmente devido à sua densidade. O Robusta mexicano traz a potência do Envivo Lungo.",
+            "torrefacao": "A força do Nespresso Envivo Lungo vem do Robusta mexicano encorpado e com alto teor de cafeína, mas também da torrefação. É um café intenso. Submetemos o Robusta a uma torrefação média e o Arábica indiano a uma torrefação alta.",
+            "perfilAromatico": "Você sentirá deliciosas notas de madeiras, de caramelo e de bolo de gengibre, pois o Robusta lavado e o Arábica indiano se equilibram. Viva manhãs mais alegres com esse café Lungo."
+        },
+        { 
+            "id": 26,
+            "nome": "Cocoa Truffle",
+            "descricao": "CAFÉ COM AROMA DE TRUFA DE CHOCOLATE AMARGO",
+            "precoUnitario": 2.60,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12923269480478/C-0602-Responsive-Standard-2000x2000-.png",
+            "medidas": [
+                "ristretto", "espresso"
+            ],
+            "origem": "O café espresso básico para a linha BARISTA CREATIONS é conhecido por ser redondo e suave. Nesta mistura, você encontra os melhores grãos da América do Sul: Arábica Bourbon brasileiros suaves em harmonia com o Arábica colombiano lavado. O sabor do cacau amargo complementa ainda mais essa mistura, com um sabor rico e aveludado familiar que aquece os aromas de café torrado.",
+            "torrefacao": "Produzido com o processo de torra dividida, o café brasileiro é levemente torrado para mantê-lo suave e com todas as suas notas de cereais maltadas intactas, enquanto a maioria dos grãos de café colombianos recebe uma torra curta para liberar todos os seus aromas mais finos. Uma moagem fina adiciona uma pitada de intensidade a este café harmonioso.",
+            "perfilAromatico": "O café Nespresso Cocoa Truffle possui notas de cacau amargo vibrante em uma base de cereal maltado. Esta cápsula de café com sabor é redonda e suave, com uma riqueza tão luxuosa quanto as trufas de chocolate amargo."
+        },
+        { 
+            "id": 27,
+            "nome": "Caramel Crème Brûlée",
+            "descricao": "CAFÉ COM AROMA DE CARAMELO CRÉME BRÛLÉE",
+            "precoUnitario": 2.60,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12923266433054/C-0601-Responsive-Standard-2000x2000-.png",
+            "medidas": [
+                "ristretto", "espresso"
+            ],
+            "origem": "O café espresso básico para a linha BARISTA CREATIONS é conhecido por ser redondo e suave. Nesta mistura, você encontra os melhores grãos da América do Sul: Arábica Bourbon brasileiros suaves em harmonia com o Arábica colombiano lavado. O sabor do cacau amargo complementa ainda mais essa mistura, com um sabor rico e aveludado familiar que aquece os aromas de café torrado.",
+            "torrefacao": "Produzido com o processo de torra dividida, o café brasileiro é levemente torrado para mantê-lo suave e com todas as suas notas de cereais maltadas intactas, enquanto a maioria dos grãos de café colombianos recebe uma torra curta para liberar todos os seus aromas mais finos. Uma moagem fina adiciona uma pitada de intensidade a este café harmonioso.",
+            "perfilAromatico": "O café Nespresso Creme Brûlée possui deliciosas notas de caramelo, baunilha e coco misturada ao caráter de malte de cereais. Esta cápsula de café com sabor é redonda e tão doce e cremosa quanto o crème brûlée."
+        },
+        { 
+            "id": 28,
+            "nome": "Vanilla Éclair",
+            "descricao": "CAFÉ COM AROMA DE ÉCLAIR DE BAUNILHA",
+            "precoUnitario": 2.60,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13044036010014/C-0600-Responsive-Standard-2000x2000-.png",
+            "medidas": [
+                "ristretto", "espresso"
+            ],
+            "origem": "O café espresso básico para a linha BARISTA CREATIONS é conhecido por ser redondo e suave. Nesta mistura, você encontra os melhores grãos da América do Sul: Arábica Bourbon brasileiros suaves em harmonia com o Arábica colombiano lavado. O sabor do cacau amargo complementa ainda mais essa mistura, com um sabor rico e aveludado familiar que aquece os aromas de café torrado.",
+            "torrefacao": "Produzido com o processo de torra dividida, o café brasileiro é levemente torrado para mantê-lo suave e com todas as suas notas de cereais maltadas intactas, enquanto a maioria dos grãos de café colombianos recebe uma torra curta para liberar todos os seus aromas mais finos. Uma moagem fina adiciona uma pitada de intensidade a este café harmonioso.",
+            "perfilAromatico": "O café Nespresso Vanilla Éclair possui notas de baunilha em uma base de cereal maltado. Esta cápsula de café com sabor é redonda e suave, deixando uma sensação sedosa na boca que pode lembrar os doces de baunilha."
+        },
+        { 
+            "id": 29,
+            "nome": "Corto",
+            "descricao": "CAFÉ PARA RECEITAS INTENSAS COM LEITE",
+            "precoUnitario": 2.60,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12315110637598/C-0293-Original-Corto-2000x2000.png",
+            "medidas": [
+                "lungo"
+            ],
+            "origem": "Selecionamos um fino Robusta da Uganda para formar a base do blend com Arábica africano, trazendo intensidade e cremosidade encorpada que você espera encontrar em uma receita de café com leite.",
+            "torrefacao": "Quando você torra qualquer café, precisa trabalhar com o delicado balanço da temperatura, tempo de torrefação e cor do grão. E isso é ainda mais importante quando esse café harmoniza com leite. Para o Corto, a torrefação demandou um longo tempo com o objetivo de liberar as texturas que estávamos procurando em um café de estilo Espanhol. Esse processo faz com que o grão alcance um tom escuro ideal, produzindo um amargor sedutor e uma textura encorpada",
+            "perfilAromatico": "Para o sabor do café Corto tiramos como inspiração os grãos de café torrados e com texturas cremosas, criados pelos baristas especialistas na Espanha. São reconhecido pelo seu sabor característico e uma torra forte e intensa. Com um toque de leite quente e espuma de leite por cima da xícara, você experimenta um Corto na sua receita tradicional."
+        },
+        { 
+            "id": 30,
+            "nome": "Scuro",
+            "descricao": "CAFÉ PARA RECEITAS EQUILIBRADAS COM LEITE",
+            "precoUnitario": 2.60,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12315109359646/C-0292-Original-Scuro-2000x2000.png",
+            "medidas": [
+                "lungo"
+            ],
+            "origem": "Selecionamos alguns dos melhores Arábicas da Colômbia e Etiópia para a Scuro. O potencial aromático destes dois cafés é intenso e promete uma composição harmoniosa de gostos com equilíbrio preciso quando adicionamos leite.",
+            "torrefacao": "Testamos muitas combinações de café até descobrirmos que para obter um sabor equilibrado do Scuro com leite, precisávamos de uma técnica de torrefação com contrastes. Uma parte da mistura recebeu uma torra longa e escura e a outra uma torra muito mais rápida e mais clara.",
+            "perfilAromatico": "Nos inspiramos nos baristas de Melbourne, na Austrália - os mestres do sabor robusto, mas requintadamente equilibrados -, cuja torrefação e mistura de cafés liberam um poder aromático equilibrado como o \"yin ao yang\" do leite. Nosso BARISTA CREATIONS Scuro mostra o quão intenso seu café pode ser se estiver em equilíbrio com o leite. Ele é torrado suficiente para destacar o leite, trazendo intensidade e delicadeza para um Cappuccino ou Latte Macchiato."
+        },
+        { 
+            "id": 31,
+            "nome": "Chiaro",
+            "descricao": "CAFÉ PARA RECEITAS DOCES E CREMOSAS COM LEITE",
+            "precoUnitario": 2.60,
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12315108376606/C-0291-Original-Chiaro-2000x2000.png",
+            "medidas": [
+                "lungo"
+            ],
+            "origem": "Para achar o encaixe certo, não hesitamos em testar muitos cafés de diferentes países de origem, mas descobrimos que nem todos interagem bem com o leite. Mas um bom Arábica do Quênia sim! E o selecionamos para ser parte do blend de Chiaro, misturando com o Arábica da ilha da Sumatra, na Indonésia. Juntos, eles formam um belo par - e colocamos nossos corações por esta doce xícara feita para suaves receitas com leite.",
+            "torrefacao": "Para desenvolver este sabor doce e convidativo do Chiaro, dividimos a torra do blend em duas etapas, torrando a uma temperatura relativamente baixa e por um tempo moderado - apenas o suficiente para desenvolver a doçura certa do café.",
+            "perfilAromatico": "BARISTA CREATIONS Chiaro tem uma torra suave e quase nenhum amargor ou acidez que você possa perceber. Possui notas de caramelo e biscoito quando adicionamos leite. Os baristas do Brooklin nos inspiraram no modo como a leveza da torra valoriza a doçura natural do café e empresta uma suavidade à xícara quando você adiciona leite."
+        }
+    ],
+    "capsulas": [
+        {
+            "categoria": "Edição Limitada",
+            "cafes": [ 
+                { 
+                    "id": 1,
+                    "nome": "Hawaii Kona",
+                    "descricao": "CAFÉ FRUTADO, EQUILIBRADO E RARO",
+                    "intensidade": 5,
+                    "precoUnitario": 6.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13334877011998/Desktop-Standard-80x80.png",
+                    "medidas": [
+                        "espresso"
+                    ]
+                },
+                { 
+                    "id": 2,
+                    "nome": "Aged Sumatra",
+                    "descricao": "CAFÉ ARTESANAL, APRIMORADO PELO TEMPO",
+                    "intensidade": 7,
+                    "precoUnitario": 4.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13415712784414/C-0625-Responsive-Standard-80x80.png",
+                    "medidas": [
+                        "espresso", "lungo"
+                    ]
+                }
+            ]
+        },
+        {
+            "categoria": "Master Origin",
+            "cafes": [ 
+                { 
+                    "id": 3,
+                    "nome": "India",
+                    "descricao": "CAFÉ COM ROBUSTA DE MONÇÕES",
+                    "intensidade": 11,
+                    "precoUnitario": 2.80,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10840367792158/C-0359-India-80x80.png",
+                    "medidas": [
+                        "espresso", "lungo"
+                    ]
+                },
+                { 
+                    "id": 4,
+                    "nome": "Indonesia",
+                    "descricao": "CAFÉ COM ARÁBICA NO MÉTODO DE DESCASCAMENTO ÚMIDO",
+                    "intensidade": 8,
+                    "precoUnitario": 2.80,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10820727865374/C-0360-Indonesia-80x80.png",
+                    "medidas": [
+                        "espresso", "lungo"
+                    ]
+                },
+                { 
+                    "id": 5,
+                    "nome": "Colombia",
+                    "descricao": "CAFÉ COM ARÁBICA DE COLHEITA TARDIA",
+                    "intensidade": 6,
+                    "precoUnitario": 2.80,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10842190675998.png",
+                    "medidas": [
+                        "espresso", "lungo"
+                    ]
+                },
+                { 
+                    "id": 6,
+                    "nome": "Nicaragua",
+                    "descricao": "CAFÉ COM ARÁBICA \"BLACK-HONEY\"",
+                    "intensidade": 5,
+                    "precoUnitario": 2.80,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10838071672862/C-0362-nicaragua-80x80.png",
+                    "medidas": [
+                        "espresso", "lungo"
+                    ]
+                },
+                { 
+                    "id": 7,
+                    "nome": "Ethiopia",
+                    "descricao": "CAFÉ COM ARÁBICA DE SECAGEM NATURAL",
+                    "intensidade": 4,
+                    "precoUnitario": 2.80,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10831332802590/C-0363-Ethiopia-80x80.png",
+                    "medidas": [
+                        "espresso", "lungo"
+                    ]
+                }
+            ]
+        },
+        { 
+            "categoria": "Inspirazione Italiana",
+            "cafes": [
+                { 
+                    "id": 8,
+                    "nome": "Napoli",
+                    "descricao": "CAFÉ EXCEPCIONALMENTE TORRADO E CREMOSO",
+                    "intensidade": 13,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12807335641118/Desktop-Standard-80x80.png",
+                    "medidas": [
+                        "ristretto", "espresso"
+                    ]
+                },
+                { 
+                    "id": 9,
+                    "nome": "Palermo Kazaar",
+                    "descricao": "CAFÉ EXCEPCIONALMENTE INTENSO E LICOROSO",
+                    "intensidade": 12,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12839055949854/Desktop-Standard-80x80.png",
+                    "medidas": [
+                        "ristretto", "espresso"
+                    ]
+                },
+                { 
+                    "id": 10,
+                    "nome": "Ristretto Italiano",
+                    "descricao": "CAFÉ PODEROSO E CONTRASTANTE",
+                    "intensidade": 10,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12807617347614/Desktop-Standard-80x80.png",
+                    "medidas": [
+                        "ristretto", "espresso"
+                    ]
+                },
+                { 
+                    "id": 11,
+                    "nome": "Firenze Arpeggio",
+                    "descricao": "CAFÉ INTENSO E CREMOSO",
+                    "intensidade": 9,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12836992745502/Desktop-Standard-80x80.png",
+                    "medidas": [
+                        "ristretto", "espresso"
+                    ]
+                },
+                { 
+                    "id": 12,
+                    "nome": "Venezia",
+                    "descricao": "CAFÉ DENSO E HARMONIOSO",
+                    "intensidade": 8,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12836853973022/Desktop-Standard-2000x2000.png",
+                    "medidas": [
+                        "ristretto", "espresso"
+                    ]
+                },
+                { 
+                    "id": 13,
+                    "nome": "Roma",
+                    "descricao": "CAFÉ ENCORPADO E BALANCEADO",
+                    "intensidade": 8,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12839352893470/Desktop-Standard-2000x2000.png",
+                    "medidas": [
+                        "ristretto", "espresso"
+                    ]
+                },
+                { 
+                    "id": 14,
+                    "nome": "Genova Livanto",
+                    "descricao": "CAFÉ REDONDO E BALANCEADO",
+                    "intensidade": 6,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12839365705758/Desktop-Standard-2000x2000.png",
+                    "medidas": [
+                        "espresso"
+                    ]
+                },
+                { 
+                    "id": 15,
+                    "nome": "Firenze Arpeggio Decaffeinato",
+                    "descricao": "CAFÉ INTENSO E CREMOSO DESCAFEINADO",
+                    "intensidade": 9,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13088659963934/arpeggio-decaf.png",
+                    "medidas": [
+                        "ristretto", "espresso"
+                    ]
+                },
+                { 
+                    "id": 16,
+                    "nome": "Ristretto Italiano Decaffeinato",
+                    "descricao": "CAFÉ PODEROSO E CONTRASTANTE DESCAFEINADO",
+                    "intensidade": 10,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13088645775390/ristreto-decafv2.png",
+                    "medidas": [
+                        "ristretto", "espresso"
+                    ]
+                }
+            ]
+        },
+        { 
+            "categoria": "Espresso & Lungo",
+            "cafes": [
+                { 
+                    "id": 17,
+                    "nome": "Volluto",
+                    "descricao": "CAFÉ ADOCICADO E LEVE",
+                    "intensidade": 4,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386858278942/C-0039-2000x2000.png",
+                    "medidas": [
+                        "espresso"
+                    ]
+                },
+                { 
+                    "id": 18,
+                    "nome": "Cosi",
+                    "descricao": "CAFÉ SUAVE E LEVEMENTE TORRADO",
+                    "intensidade": 4,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386856312862/C-0004-2000x2000.png",
+                    "medidas": [
+                        "espresso"
+                    ]
+                },
+                { 
+                    "id": 19,
+                    "nome": "Linizio Lungo",
+                    "descricao": "CAFÉ SUAVE E HARMONIZADO",
+                    "intensidade": 4,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386858541086/C-0057-2000x2000.png",
+                    "medidas": [
+                        "lungo"
+                    ]
+                },
+                { 
+                    "id": 20,
+                    "nome": "Vivalto Lungo",
+                    "descricao": "CAFÉ COMPLEXO E BALANCEADO",
+                    "intensidade": 4,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386858082334/C-0038-2000x2000.png",
+                    "medidas": [
+                        "lungo"
+                    ]
+                },
+                { 
+                    "id": 21,
+                    "nome": "Volluto Decaffeinato",
+                    "descricao": "CAFÉ ADOCICADO E LEVE DESCAFEINADO",
+                    "intensidade": 4,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13057317896222/voll-decafv2-1-.png",
+                    "medidas": [
+                        "espresso"
+                    ]
+                },
+                { 
+                    "id": 22,
+                    "nome": "Vivalto Lungo Decaffeinato",
+                    "descricao": "CAFÉ ADOCICADO E LEVE DESCAFEINADO",
+                    "intensidade": 4,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13057322680350/vivalto-decafv2-1-.png",
+                    "medidas": [
+                        "lungo"
+                    ]
+                },
+                { 
+                    "id": 23,
+                    "nome": "Capriccio",
+                    "descricao": "CAFÉ COMPLEXO E DIFERENCIADO",
+                    "intensidade": 5,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386856116254/C-0003-2000x2000.png",
+                    "medidas": [
+                        "espresso"
+                    ]
+                },
+                { 
+                    "id": 24,
+                    "nome": "Fortissio Lungo",
+                    "descricao": "CAFÉ ESTRUTURADO E ENCORPADO",
+                    "intensidade": 8,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386856902686/C-0014-2000x2000.png",
+                    "medidas": [
+                        "lungo"
+                    ]
+                },
+                { 
+                    "id": 25,
+                    "nome": "Envivo Lungo",
+                    "descricao": "CAFÉ POTENTE E CARAMELIZADO",
+                    "intensidade": 9,
+                    "precoUnitario": 2.40,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386863685662/C-0210-2000x2000.png",
+                    "medidas": [
+                        "lungo"
+                    ]
+                }
+            ]
+        },
+        { 
+            "categoria": "Barista Creations",
+            "cafes": [
+                { 
+                    "id": 26,
+                    "nome": "Cocoa Truffle",
+                    "descricao": "CAFÉ COM AROMA DE TRUFA DE CHOCOLATE AMARGO",
+                    "precoUnitario": 2.60,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12923269480478/C-0602-Responsive-Standard-2000x2000-.png",
+                    "medidas": [
+                        "ristretto", "espresso"
+                    ]
+                },
+                { 
+                    "id": 27,
+                    "nome": "Caramel Crème Brûlée",
+                    "descricao": "CAFÉ COM AROMA DE CARAMELO CRÉME BRÛLÉE",
+                    "precoUnitario": 2.60,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12923266433054/C-0601-Responsive-Standard-2000x2000-.png",
+                    "medidas": [
+                        "ristretto", "espresso"
+                    ]
+                },
+                { 
+                    "id": 28,
+                    "nome": "Vanilla Éclair",
+                    "descricao": "CAFÉ COM AROMA DE ÉCLAIR DE BAUNILHA",
+                    "precoUnitario": 2.60,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13044036010014/C-0600-Responsive-Standard-2000x2000-.png",
+                    "medidas": [
+                        "ristretto", "espresso"
+                    ]
+                },
+                { 
+                    "id": 29,
+                    "nome": "Corto",
+                    "descricao": "CAFÉ PARA RECEITAS INTENSAS COM LEITE",
+                    "precoUnitario": 2.60,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12315110637598/C-0293-Original-Corto-2000x2000.png",
+                    "medidas": [
+                        "lungo"
+                    ]
+                },
+                { 
+                    "id": 30,
+                    "nome": "Scuro",
+                    "descricao": "CAFÉ PARA RECEITAS EQUILIBRADAS COM LEITE",
+                    "precoUnitario": 2.60,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12315109359646/C-0292-Original-Scuro-2000x2000.png",
+                    "medidas": [
+                        "lungo"
+                    ]
+                },
+                { 
+                    "id": 31,
+                    "nome": "Chiaro",
+                    "descricao": "CAFÉ PARA RECEITAS DOCES E CREMOSAS COM LEITE",
+                    "precoUnitario": 2.60,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12315108376606/C-0291-Original-Chiaro-2000x2000.png",
+                    "medidas": [
+                        "lungo"
+                    ]
+                }
+            ]
+        }
+    ],
+    "acessorios": [
+        { 
+            "categoria": "Xícaras e Copos",
+            "itens": [
+                { 
+                    "id": 1,
+                    "nome": "Xícaras ORIGINS Espresso",
+                    "preco": 115.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/11971285319710/A-0394-2000.png",
+                    "descricao": "As xícaras da coleção Origins são feitas de porcelana com camada dupla, desenhadas pela renomada designer internacional India Mahdavi. A sua forma é inspirada num grão de café, com o exterior branco fosco e um interior colorido envernizado."
+                },
+                { 
+                    "id": 2,
+                    "nome": "Xícaras ORIGINS Lungo",
+                    "preco": 115.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/11904441974814/A-0395-2000.png",
+                    "descricao": "Para momentos com café que te fazem voltar no tempo. Este conjunto de xícaras de café Lungo (ca. 180ml) transforma cada momento de café em um pequeno ritual."
+                },
+                { 
+                    "id": 3,
+                    "nome": "Xícaras PIXIE Espresso",
+                    "preco": 110.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13087862063134/Desktop-Standard-2000x2000.png",
+                    "descricao": "Reinvente a forma de degustar seu café favorito com estas inovadoras xícaras de café criadas pelo audacioso grupo de designers franceses 5.5 Designers utilizando as cápsulas de café Nespresso como elemento central."
+                },
+                { 
+                    "id": 4,
+                    "nome": "Xícaras PIXIE Lungo",
+                    "preco": 120.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13088013582366/Desktop-Standard-2000x2000.png",
+                    "descricao": "Reinvente a forma de degustar seu café favorito com estas inovadoras xícaras de café criadas pelo audacioso grupo de designers franceses 5.5 Designers utilizando as cápsulas de café Nespresso como elemento central."
+                },
+                { 
+                    "id": 5,
+                    "nome": "Taças REVEAL Equilibrados",
+                    "preco": 170.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386878300190/A-0260-2000x2000.png",
+                    "descricao": "Baseada em uma abordagem semelhante à enologia, estas taças especiais de degustação de café foram exclusivamente desenvolvidas pelos Mestres da Riedel e pela Nespresso para ressaltarem a delicadeza das notas frutadas e de cereais dos Grands Crus Equilibrados (até Intensidade 6) elevando a experiência da degustação para um novo nível."
+                },
+                { 
+                    "id": 6,
+                    "nome": "Taças REVEAL para Cafés Intensos",
+                    "preco": 170.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386878103582/A-0259-2000x2000.png",
+                    "descricao": "Baseada em uma abordagem semelhante à enologia, esta taça especial de degustação de café foi exclusivamente desenvolvida pelos Mestres da Riedel e pela Nespresso para concentrar as poderosas notas torradas dos Grands Crus Intensos (intensidade 7 e acima), elevando a experiência da degustação para um novo nível."
+                },
+                { 
+                    "id": 7,
+                    "nome": "Taças REVEAL para Cafés Lungo",
+                    "preco": 180.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12155633401886/A-0259-2000x2000-espresso.png",
+                    "descricao": "Eleve a sua experiência de degustação com o novo Reveal Lungo Glass. Conjunto de 2 taças de café para degustação, em vidro-cristal, perfeito para intensificar o corpo e aroma do cafés Lungo."
+                },
+                { 
+                    "id": 8,
+                    "nome": "Caneca Térmica Travel Mug",
+                    "preco": 95.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386874957854/A-0198-2000x2000.png",
+                    "descricao": "Desfrute seu café Nespresso fora de casa com caneca térmica de viagem Touch Travel Mug. Além de contar com um design inovador e urbano, ela manterá a temperatura de sua bebida para que você a deguste onde quiser."
+                },
+                { 
+                    "id": 9,
+                    "nome": "Xícaras VIEW Espresso",
+                    "preco": 90.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10392979931166/A-0075-VIEW-Lungo-2000X2000-2.png",
+                    "descricao": "Os novos pires da View Collection são feitos de aço inoxidável 18/10, um material muito resistente."
+                },
+                { 
+                    "id": 10,
+                    "nome": "Xícaras VIEW Lungo",
+                    "preco": 100.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10392979341342/A-0075-VIEW-Lungo-2000X2000-2.png",
+                    "descricao": "Os novos pires da View Collection são feitos de aço inoxidável 18/10, um material muito resistente."
+                },
+                { 
+                    "id": 11,
+                    "nome": "Xícaras VIEW Cappuccino",
+                    "preco": 100.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10392978554910/A-0175-VIEW-Cappuccino-2000X2000-2.png",
+                    "descricao": "Os novos pires da View Collection são feitos de aço inoxidável 18/10, um material muito resistente."
+                },
+                { 
+                    "id": 12,
+                    "nome": "Canecas VIEW",
+                    "preco": 110.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10392977211422/A-0346-VIEW-Mug-2000X2000-2.png",
+                    "descricao": "Você instintivamente vai desejar deslizar o dedo pela alça do copo, abrir a mão e sentir o calor do café através do vidro. A coleção View se encaixa perfeitamente em sua mão e na sua vida."
+                },
+                { 
+                    "id": 13,
+                    "nome": "Copos de Receita VIEW",
+                    "preco": 115.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10392978096158/A-0176-VIEW-Recipe-2000X2000-2.png",
+                    "descricao": "Os copos para receitas Glass Recipe são perfeitos para servir Latte Macchiatos, Cappuccinos e outras bebidas quentes ou frias. Conjunto com 2 copos Recipe de vidro temperado (cap. 350 ml)"
+                }
+            ]
+        },
+        { 
+            "categoria": "Para Harmonizar",
+            "itens": [
+                { 
+                    "id": 14,
+                    "nome": "Chocolate Ao Leite",
+                    "preco": 40.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386876530718/A-0228-2000x2000.png",
+                    "descricao": "Preparado com leite suíço e 41% de cacau, o Chocolate Ao Leite Nespresso possui textura cremosa e derrete na boca revelando notas carameladas, que harmonizam perfeitamente com os deliciosos cafés Nespresso."
+                },
+                { 
+                    "id": 15,
+                    "nome": "Chocolate Amargo",
+                    "preco": 40.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386876334110/A-0227-2000x2000.png",
+                    "descricao": "Preparado com leite suíço e 70% de cacau, o Chocolate Amargo Nespresso possui textura leve e sabor persistente, com notas frutadas e tostadas que despertam o paladar e harmonizam perfeitamente com os deliciosos cafés Nespresso."
+                },
+                { 
+                    "id": 16,
+                    "nome": "Biscoito Cantuccini",
+                    "preco": 30.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10608318349342/A-0013-2000x2000.png"
+                },
+                { 
+                    "id": 17,
+                    "nome": "Açúcar Mascavo (60 sachês)",
+                    "preco": 25.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10396582182942/A-1026-2000x2000.png"
+                },
+                { 
+                    "id": 18,
+                    "nome": "Açúcar Branco (60 sachês)",
+                    "preco": 20.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386874761246/A-0190-2000x2000.png"
+                }
+            ]
+        },
+        {
+            "categoria": "Porta Cápsulas",
+            "itens": [
+                { 
+                    "id": 19,
+                    "nome": "Nomad",
+                    "preco": 110.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10567495548958/A-0381-Touch-nomad-dispenser-Gabarit-Accessories-2000x2000.png"
+                },
+                { 
+                    "id": 20,
+                    "nome": "Cube",
+                    "preco": 80.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386867421214/A-0042-2000x2000.png"
+                },
+                { 
+                    "id": 21,
+                    "nome": "Versilo",
+                    "preco": 170.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386878496798/A-0265-2000x2000.png"
+                },
+                { 
+                    "id": 22,
+                    "nome": "Bonbonnière",
+                    "preco": 85.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10386873974814/A-0178-2000x2000.png"
+                },
+                { 
+                    "id": 23,
+                    "nome": "Discovery Box",
+                    "preco": 140.00,
+                    "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12551462223902/Desktop-Standard-2000x2000.png"
+                }
+            ]
+        }
+    ],
+    "maquinas": [ 
+        { 
+            "id": 1,
+            "nome": "Inissia",
+            "preco": 499.00,
+            "descricao": "Premiada por seu compacto design, a Inissia está aqui para garantir que a sua xícara de café seja prática, sem deixar nada fora do lugar.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/13182854103070/Inissia-2000x2000.png"
+        },
+        { 
+            "id": 2,
+            "nome": "Essenza Mini",
+            "preco": 549.00,
+            "descricao": "A Essenza Mini, com duas opções de modelo, é a menor cafeteira Nespresso e dá um toque de personalidade a todos os estilos e decorações.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12197792874526/Essenza-preto.png"
+        },
+        { 
+            "id": 3,
+            "nome": "Essenza Mini & Aeroccino3",
+            "preco": 849.00,
+            "descricao": "Design e personalidade para o seu cantinho Nespresso. Nossa menor cafeteira, feita para seus melhores Espressos e Lungos. Combine com o Aeroccino3 para preparar receitas com leite.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12197794250782/Essenza-e-Aero-preto-fosco.png"
+        },
+        { 
+            "id": 4,
+            "nome": "Pixie",
+            "preco": 699.00,
+            "descricao": "Seu design industrial dá um toque de Barista ao ritual do café. Faça Espressos ou Lungos em casa com apenas um botão.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12772119117854/Pixie-Red.png"
+        },
+        { 
+            "id": 5,
+            "nome": "CitiZ",
+            "preco": 799.00,
+            "descricao": "União de alta tecnologia e design retro-moderno, a dimensão compacta da CitiZ se encaixa perfeitamente em todos os ambientes.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12824286068766/Citiz-Cherry-2000x2000-Frontal.png"
+        },
+        { 
+            "id": 6,
+            "nome": "CitiZ & Aeroccino3",
+            "preco": 1099.00,
+            "descricao": "União de alta tecnologia e design retro-moderno, a dimensão compacta da CitiZ se encaixa perfeitamente em todos os ambientes.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12896355057694/citiz-white-2000x2000.png"
+        },
+        { 
+            "id": 7,
+            "nome": "Essenza Plus",
+            "preco": 899.00,
+            "descricao": "Café com muito mais opções para agradar a você e à família inteira. Conheça a máquina que pede seu Nespresso favorito através do botão de compra automática.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12911623307294/DRange-Red.png"
+        },
+        { 
+            "id": 8,
+            "nome": "Lattissima One",
+            "preco": 1099.00,
+            "descricao": "A máquina mais prática para quem gosta de café com leite. Cappuccino ou Latte Macchiato? É só adicionar leite e ela prepara a receita na medida certa.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12197800116254/Lattissima-Branco.png"
+        },
+        { 
+            "id": 9,
+            "nome": "Expert",
+            "preco": 1299.00,
+            "descricao": "Personalize cada xícara de café na sua casa com uma variedade especial de tamanhos e temperaturas. A tecnologia da Expert torna você um Especialista em café.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12197799133214/Expert.png"
+        },
+        { 
+            "id": 10,
+            "nome": "Expert & Aeroccino3",
+            "preco": 1599.00,
+            "descricao": "Personalize cada xícara de café na sua casa com uma variedade especial de tamanhos e temperaturas. A tecnologia da Expert torna você um Especialista em café. Combine com o Aeroccino3 para preparar receitas com leite.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12197799428126/Expert-Combo.png"
+        },
+        { 
+            "id": 11,
+            "nome": "Lattissima Touch",
+            "preco": 1599.00,
+            "descricao": "Prepare-se para infinitas possibilidades com café e leite. Cappuccinos, Lattes, Macchiatos e muito mais para surpreender você e todos em casa.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12197801000990/Lattissima-Aluminio.png"
+        },
+        { 
+            "id": 12,
+            "nome": "Gran Lattissima",
+            "preco": 2499.00,
+            "descricao": "Agora você pode desfrutar a experiência de uma cafeteria completa no conforto da sua casa, com seis variedades de receitas de leite.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12567391567902/Desktop-Standard-2000x2000.png"
+        },
+        { 
+            "id": 13,
+            "nome": "Creatista",
+            "preco": 2999.00,
+            "descricao": "Com 8 tipos de receitas com café e até 11 possibilidades de criações com leite, a Creatista é mais do que uma máquina. Seu acabamento em inox escovado e refinado combina perfeitamente no ambiente de sua preferência.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/12448076005406/NESP.0193.006.M00.AF.190603.Creatista-Ebanner-PDP-2000x2000.png"
+        },
+        { 
+            "id": 14,
+            "nome": "Barista",
+            "preco": 1099.00,
+            "descricao": "Intuitiva e conectada, a Barista é a parceira perfeita para a sua máquina Nespresso. Faça de refrescantes Iced Coffees a Cappuccinos mais elaborados usando café, seus ingredientes favoritos e o App Nespresso.",
+            "imagem": "https://www.nespresso.com/ecom/medias/sys_master/public/10755477012510/Barista-2000x2000-noreflection.png"
+        }
+    ]
+}

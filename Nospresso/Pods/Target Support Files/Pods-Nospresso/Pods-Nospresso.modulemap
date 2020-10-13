@@ -1,0 +1,6 @@
+framework module Pods_Nospresso {
+  umbrella header "Pods-Nospresso-umbrella.h"
+
+  export *
+  module * { export * }
+}
