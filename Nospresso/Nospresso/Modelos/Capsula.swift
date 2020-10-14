@@ -9,5 +9,5 @@ import Foundation
 
 public struct Capsula: Decodable {
     let categoria: String
-    let cafes: [Cafe]
+    let cafes: [CafeDaCapsula]
 }

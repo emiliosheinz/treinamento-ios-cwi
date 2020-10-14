@@ -19,10 +19,12 @@
 		CFAD8D24253639BD00317B92 /* NospressoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD8D23253639BD00317B92 /* NospressoTests.swift */; };
 		CFAD8D2F253639BD00317B92 /* NospressoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD8D2E253639BD00317B92 /* NospressoUITests.swift */; };
 		CFC507292536592C00B0DCAE /* Capsula.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC507282536592C00B0DCAE /* Capsula.swift */; };
-		CFC507312536596500B0DCAE /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC507302536596500B0DCAE /* Cafe.swift */; };
 		CFC50736253659B400B0DCAE /* Maquina.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC50735253659B400B0DCAE /* Maquina.swift */; };
 		CFC5073C25365A0200B0DCAE /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5073B25365A0200B0DCAE /* Api.swift */; };
 		CFC5074725365A4600B0DCAE /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5074625365A4600B0DCAE /* Endpoint.swift */; };
+		CFF267422537C12900524D42 /* Acessorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF267412537C12900524D42 /* Acessorio.swift */; };
+		CFF267472537C1AC00524D42 /* CategoriaDeAcessorios.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF267462537C1AC00524D42 /* CategoriaDeAcessorios.swift */; };
+		CFF267632537C40F00524D42 /* Cafe.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF267622537C40F00524D42 /* Cafe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,10 +68,12 @@
 		CFAD8D2E253639BD00317B92 /* NospressoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NospressoUITests.swift; sourceTree = "<group>"; };
 		CFAD8D30253639BD00317B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFC507282536592C00B0DCAE /* Capsula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsula.swift; sourceTree = "<group>"; };
-		CFC507302536596500B0DCAE /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		CFC50735253659B400B0DCAE /* Maquina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maquina.swift; sourceTree = "<group>"; };
 		CFC5073B25365A0200B0DCAE /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		CFC5074625365A4600B0DCAE /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		CFF267412537C12900524D42 /* Acessorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acessorio.swift; sourceTree = "<group>"; };
+		CFF267462537C1AC00524D42 /* CategoriaDeAcessorios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDeAcessorios.swift; sourceTree = "<group>"; };
+		CFF267622537C40F00524D42 /* Cafe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe.swift; sourceTree = "<group>"; };
 		E464C67EEBC15A87F9AAE35A /* Pods_Nospresso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nospresso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -184,8 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				CFC507282536592C00B0DCAE /* Capsula.swift */,
-				CFC507302536596500B0DCAE /* Cafe.swift */,
 				CFC50735253659B400B0DCAE /* Maquina.swift */,
+				CFF267412537C12900524D42 /* Acessorio.swift */,
+				CFF267462537C1AC00524D42 /* CategoriaDeAcessorios.swift */,
+				CFF267622537C40F00524D42 /* Cafe.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -402,13 +408,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFC5073C25365A0200B0DCAE /* Api.swift in Sources */,
+				CFF267632537C40F00524D42 /* Cafe.swift in Sources */,
+				CFF267472537C1AC00524D42 /* CategoriaDeAcessorios.swift in Sources */,
 				CFAD8D11253639BC00317B92 /* ViewController.swift in Sources */,
 				CFC5074725365A4600B0DCAE /* Endpoint.swift in Sources */,
 				CFC507292536592C00B0DCAE /* Capsula.swift in Sources */,
 				CFAD8D0D253639BC00317B92 /* AppDelegate.swift in Sources */,
-				CFC507312536596500B0DCAE /* Cafe.swift in Sources */,
 				CFC50736253659B400B0DCAE /* Maquina.swift in Sources */,
 				CFAD8D0F253639BC00317B92 /* SceneDelegate.swift in Sources */,
+				CFF267422537C12900524D42 /* Acessorio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
