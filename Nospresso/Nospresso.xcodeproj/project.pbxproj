@@ -3,13 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		11EE322924500EABF0F630D6 /* Pods_Nospresso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E464C67EEBC15A87F9AAE35A /* Pods_Nospresso.framework */; };
 		954469655D4FD3AF299F9954 /* Pods_NospressoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4BFE7FDC2DA4C831321A03 /* Pods_NospressoTests.framework */; };
 		BD90864CA6679644AAC228BF /* Pods_Nospresso_NospressoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B527DA8D8994A6F3E44E8D2 /* Pods_Nospresso_NospressoUITests.framework */; };
+		CF13C1A7253B1795002539AE /* MenuProdutosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF13C1A6253B1795002539AE /* MenuProdutosViewController.swift */; };
+		CF13C1AD253B1F5F002539AE /* UIViewController+Barbadas.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF13C1AC253B1F5F002539AE /* UIViewController+Barbadas.swift */; };
+		CF13C1B6253B2E70002539AE /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF13C1B5253B2E70002539AE /* R.generated.swift */; };
+		CF13C1C6253B304B002539AE /* Pseudonimos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF13C1C5253B304B002539AE /* Pseudonimos.swift */; };
+		CF13C1CD253B3200002539AE /* CategoriaDeCafeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF13C1CC253B3200002539AE /* CategoriaDeCafeHeaderView.swift */; };
+		CF13C1D2253B3248002539AE /* CategoriaDeCafeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF13C1D1253B3248002539AE /* CategoriaDeCafeHeaderView.xib */; };
+		CF13C224253B3D3C002539AE /* UIImageView+CarregarImagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF13C223253B3D3C002539AE /* UIImageView+CarregarImagem.swift */; };
+		CF13C255253B47DD002539AE /* Double+RealFormatado.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF13C254253B47DD002539AE /* Double+RealFormatado.swift */; };
 		CF2CC2C12538EBA300C32576 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF2CC2B72538EBA200C32576 /* OpenSans-SemiBoldItalic.ttf */; };
 		CF2CC2C22538EBA300C32576 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF2CC2B82538EBA200C32576 /* OpenSans-Light.ttf */; };
 		CF2CC2C32538EBA300C32576 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF2CC2B92538EBA200C32576 /* OpenSans-SemiBold.ttf */; };
@@ -30,7 +38,7 @@
 		CFAD8D19253639BD00317B92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAD8D17253639BD00317B92 /* LaunchScreen.storyboard */; };
 		CFAD8D24253639BD00317B92 /* NospressoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD8D23253639BD00317B92 /* NospressoTests.swift */; };
 		CFAD8D2F253639BD00317B92 /* NospressoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD8D2E253639BD00317B92 /* NospressoUITests.swift */; };
-		CFC507292536592C00B0DCAE /* Capsula.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC507282536592C00B0DCAE /* Capsula.swift */; };
+		CFC507292536592C00B0DCAE /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC507282536592C00B0DCAE /* Categoria.swift */; };
 		CFC50736253659B400B0DCAE /* Maquina.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC50735253659B400B0DCAE /* Maquina.swift */; };
 		CFC5073C25365A0200B0DCAE /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5073B25365A0200B0DCAE /* Api.swift */; };
 		CFC5074725365A4600B0DCAE /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5074625365A4600B0DCAE /* Endpoint.swift */; };
@@ -65,6 +73,14 @@
 		7B224E32AAE172122FDCA6A1 /* Pods-Nospresso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso.debug.xcconfig"; path = "Target Support Files/Pods-Nospresso/Pods-Nospresso.debug.xcconfig"; sourceTree = "<group>"; };
 		81DBF59496CB68865908DE3F /* Pods-Nospresso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Nospresso.release.xcconfig"; path = "Target Support Files/Pods-Nospresso/Pods-Nospresso.release.xcconfig"; sourceTree = "<group>"; };
 		8B527DA8D8994A6F3E44E8D2 /* Pods_Nospresso_NospressoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Nospresso_NospressoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF13C1A6253B1795002539AE /* MenuProdutosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProdutosViewController.swift; sourceTree = "<group>"; };
+		CF13C1AC253B1F5F002539AE /* UIViewController+Barbadas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Barbadas.swift"; sourceTree = "<group>"; };
+		CF13C1B5253B2E70002539AE /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
+		CF13C1C5253B304B002539AE /* Pseudonimos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pseudonimos.swift; sourceTree = "<group>"; };
+		CF13C1CC253B3200002539AE /* CategoriaDeCafeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaDeCafeHeaderView.swift; sourceTree = "<group>"; };
+		CF13C1D1253B3248002539AE /* CategoriaDeCafeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaDeCafeHeaderView.xib; sourceTree = "<group>"; };
+		CF13C223253B3D3C002539AE /* UIImageView+CarregarImagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+CarregarImagem.swift"; sourceTree = "<group>"; };
+		CF13C254253B47DD002539AE /* Double+RealFormatado.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+RealFormatado.swift"; sourceTree = "<group>"; };
 		CF2CC2B72538EBA200C32576 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		CF2CC2B82538EBA200C32576 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		CF2CC2B92538EBA200C32576 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -91,7 +107,7 @@
 		CFAD8D2A253639BD00317B92 /* NospressoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NospressoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD8D2E253639BD00317B92 /* NospressoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NospressoUITests.swift; sourceTree = "<group>"; };
 		CFAD8D30253639BD00317B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CFC507282536592C00B0DCAE /* Capsula.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsula.swift; sourceTree = "<group>"; };
+		CFC507282536592C00B0DCAE /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
 		CFC50735253659B400B0DCAE /* Maquina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maquina.swift; sourceTree = "<group>"; };
 		CFC5073B25365A0200B0DCAE /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		CFC5074625365A4600B0DCAE /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
@@ -152,6 +168,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CF13C1AB253B1F40002539AE /* Extensoes */ = {
+			isa = PBXGroup;
+			children = (
+				CF13C1AC253B1F5F002539AE /* UIViewController+Barbadas.swift */,
+				CF13C1C5253B304B002539AE /* Pseudonimos.swift */,
+				CF13C223253B3D3C002539AE /* UIImageView+CarregarImagem.swift */,
+				CF13C254253B47DD002539AE /* Double+RealFormatado.swift */,
+			);
+			path = Extensoes;
+			sourceTree = "<group>";
+		};
+		CF13C1CA253B3169002539AE /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				CF13C1CB253B3170002539AE /* Celulas */,
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
+		CF13C1CB253B3170002539AE /* Celulas */ = {
+			isa = PBXGroup;
+			children = (
+				CF2CC2DE2538FAA900C32576 /* CafeTableViewCell.swift */,
+				CF13C1CC253B3200002539AE /* CategoriaDeCafeHeaderView.swift */,
+				CF13C1D1253B3248002539AE /* CategoriaDeCafeHeaderView.xib */,
+			);
+			path = Celulas;
+			sourceTree = "<group>";
+		};
 		CF2CC2B52538EB5B00C32576 /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				CF2CC2DD2538FA9500C32576 /* Cafes */,
+				CF13C1A6253B1795002539AE /* MenuProdutosViewController.swift */,
 			);
 			path = Modulos;
 			sourceTree = "<group>";
@@ -188,8 +234,8 @@
 		CF2CC2DD2538FA9500C32576 /* Cafes */ = {
 			isa = PBXGroup;
 			children = (
+				CF13C1CA253B3169002539AE /* Componentes */,
 				CF2CC2D52538F49F00C32576 /* CafesTableViewController.swift */,
-				CF2CC2DE2538FAA900C32576 /* CafeTableViewCell.swift */,
 			);
 			path = Cafes;
 			sourceTree = "<group>";
@@ -219,6 +265,8 @@
 		CFAD8D0B253639BC00317B92 /* Nospresso */ = {
 			isa = PBXGroup;
 			children = (
+				CF13C1B5253B2E70002539AE /* R.generated.swift */,
+				CF13C1AB253B1F40002539AE /* Extensoes */,
 				CF2CC2D42538F48E00C32576 /* Modulos */,
 				CF2CC2B52538EB5B00C32576 /* Recursos */,
 				CFC5073A253659F800B0DCAE /* Api */,
@@ -255,7 +303,7 @@
 		CFC507272536591C00B0DCAE /* Modelos */ = {
 			isa = PBXGroup;
 			children = (
-				CFC507282536592C00B0DCAE /* Capsula.swift */,
+				CFC507282536592C00B0DCAE /* Categoria.swift */,
 				CFC50735253659B400B0DCAE /* Maquina.swift */,
 				CFF267412537C12900524D42 /* Acessorio.swift */,
 				CFF267462537C1AC00524D42 /* CategoriaDeAcessorios.swift */,
@@ -281,9 +329,11 @@
 			buildConfigurationList = CFAD8D33253639BD00317B92 /* Build configuration list for PBXNativeTarget "Nospresso" */;
 			buildPhases = (
 				1BB1B9177956AD78E27B0813 /* [CP] Check Pods Manifest.lock */,
+				CF13C1B1253B286C002539AE /* R.swift Run Script */,
 				CFAD8D05253639BC00317B92 /* Sources */,
 				CFAD8D06253639BC00317B92 /* Frameworks */,
 				CFAD8D07253639BC00317B92 /* Resources */,
+				5E3CE8561C95CF0E0C82CF25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,6 +352,7 @@
 				CFAD8D1B253639BD00317B92 /* Sources */,
 				CFAD8D1C253639BD00317B92 /* Frameworks */,
 				CFAD8D1D253639BD00317B92 /* Resources */,
+				303B38B8CADDD91DEE043206 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -321,6 +372,7 @@
 				CFAD8D26253639BD00317B92 /* Sources */,
 				CFAD8D27253639BD00317B92 /* Frameworks */,
 				CFAD8D28253639BD00317B92 /* Resources */,
+				96936A1148D7812A08B56427 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -392,6 +444,7 @@
 				CF2CC2C32538EBA300C32576 /* OpenSans-SemiBold.ttf in Resources */,
 				CFAD8D14253639BC00317B92 /* Main.storyboard in Resources */,
 				CF2CC2CA2538EBA300C32576 /* OpenSans-ExtraBold.ttf in Resources */,
+				CF13C1D2253B3248002539AE /* CategoriaDeCafeHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +487,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		303B38B8CADDD91DEE043206 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NospressoTests/Pods-NospressoTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NospressoTests/Pods-NospressoTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NospressoTests/Pods-NospressoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		489879FC3B08FC7CE9CE58B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,6 +524,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E3CE8561C95CF0E0C82CF25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nospresso/Pods-Nospresso-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nospresso/Pods-Nospresso-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nospresso/Pods-Nospresso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96936A1148D7812A08B56427 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Nospresso-NospressoUITests/Pods-Nospresso-NospressoUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C94EA1D9DB42CE64A5F4EBC0 /* [CP] Check Pods Manifest.lock */ = {
@@ -478,6 +582,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CF13C1B1253B286C002539AE /* R.swift Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = "R.swift Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -487,15 +611,22 @@
 			files = (
 				CF2CC2DF2538FAA900C32576 /* CafeTableViewCell.swift in Sources */,
 				CF2CC2D62538F49F00C32576 /* CafesTableViewController.swift in Sources */,
+				CF13C224253B3D3C002539AE /* UIImageView+CarregarImagem.swift in Sources */,
+				CF13C1C6253B304B002539AE /* Pseudonimos.swift in Sources */,
+				CF13C1B6253B2E70002539AE /* R.generated.swift in Sources */,
+				CF13C1A7253B1795002539AE /* MenuProdutosViewController.swift in Sources */,
 				CFC5073C25365A0200B0DCAE /* Api.swift in Sources */,
 				CFF267632537C40F00524D42 /* Cafe.swift in Sources */,
 				CFF267472537C1AC00524D42 /* CategoriaDeAcessorios.swift in Sources */,
+				CF13C1CD253B3200002539AE /* CategoriaDeCafeHeaderView.swift in Sources */,
+				CF13C1AD253B1F5F002539AE /* UIViewController+Barbadas.swift in Sources */,
 				CFAD8D11253639BC00317B92 /* ViewController.swift in Sources */,
 				CFC5074725365A4600B0DCAE /* Endpoint.swift in Sources */,
-				CFC507292536592C00B0DCAE /* Capsula.swift in Sources */,
+				CFC507292536592C00B0DCAE /* Categoria.swift in Sources */,
 				CFAD8D0D253639BC00317B92 /* AppDelegate.swift in Sources */,
 				CFC50736253659B400B0DCAE /* Maquina.swift in Sources */,
 				CFAD8D0F253639BC00317B92 /* SceneDelegate.swift in Sources */,
+				CF13C255253B47DD002539AE /* Double+RealFormatado.swift in Sources */,
 				CFF267422537C12900524D42 /* Acessorio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

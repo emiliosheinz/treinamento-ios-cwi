@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-LightItalic.ttf">
+            <string>OpenSans-LightItalic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="CategoriaDeCafeHeaderView" customModule="Nospresso" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wf3-Xo-cgi">
+                    <rect key="frame" x="16" y="12.666666666666666" width="288" height="24.666666666666671"/>
+                    <fontDescription key="fontDescription" name="OpenSans-LightItalic" family="Open Sans" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" name="FundoCinza"/>
+            <constraints>
+                <constraint firstItem="Wf3-Xo-cgi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6cg-Y4-aUA"/>
+                <constraint firstAttribute="trailing" secondItem="Wf3-Xo-cgi" secondAttribute="trailing" constant="16" id="YQw-fV-5fW"/>
+                <constraint firstItem="Wf3-Xo-cgi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="kzg-Ic-ybX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tituloLabel" destination="Wf3-Xo-cgi" id="xyI-m6-ixV"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="149"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="FundoCinza">
+            <color red="0.95300000905990601" green="0.95300000905990601" blue="0.95300000905990601" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,3 +1,32 @@
-PODFILE CHECKSUM: d9dd0ab46550c2704f7774eec1ad4bff297e2228
+PODS:
+  - Nimble (9.0.0)
+  - Nuke (9.1.2)
+  - Quick (3.0.0)
+  - R.swift (5.2.2):
+    - R.swift.Library (~> 5.2.0)
+  - R.swift.Library (5.2.0)
+
+DEPENDENCIES:
+  - Nimble
+  - Nuke
+  - Quick
+  - R.swift
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Nuke
+    - Quick
+    - R.swift
+    - R.swift.Library
+
+SPEC CHECKSUMS:
+  Nimble: 3b4ec3fd40f1dc178058e0981107721c615643d8
+  Nuke: dd2e6be6a34c042a7861e190632781d11f253026
+  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
+  R.swift: 7c52cdc57a66840ffe6cbd8a823d732059d42a32
+  R.swift.Library: 5ba4f1631300caf9a4d890186930da85d540769d
+
+PODFILE CHECKSUM: 4b087542e74f5ac9b61fb69fcb2aa1b3a08d800d
 
 COCOAPODS: 1.9.3

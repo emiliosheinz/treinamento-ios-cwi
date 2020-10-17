@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -15,15 +16,18 @@
         <array key="OpenSans-Light.ttf">
             <string>OpenSans-Light</string>
         </array>
+        <array key="OpenSans-LightItalic.ttf">
+            <string>OpenSans-LightItalic</string>
+        </array>
         <array key="OpenSans-SemiBold.ttf">
             <string>OpenSans-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Menu Produtos View Controller-->
         <scene sceneID="VHC-rH-Kro">
             <objects>
-                <viewController id="v12-5u-iDw" sceneMemberID="viewController">
+                <viewController id="v12-5u-iDw" customClass="MenuProdutosViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HtT-dJ-tYc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,16 +161,16 @@
             </objects>
             <point key="canvasLocation" x="786.95652173913049" y="649.55357142857144"/>
         </scene>
-        <!--Cafes Table View Controller-->
+        <!--Cafés-->
         <scene sceneID="chU-Sn-XrZ">
             <objects>
-                <tableViewController id="Nck-Ty-jGr" customClass="CafesTableViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Cafés" id="Nck-Ty-jGr" customClass="CafesTableViewController" customModule="Nospresso" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7UO-MU-US6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CafeCell" rowHeight="100" id="mr5-fH-8XJ" customClass="CafeTableViewCell" customModule="Nospresso" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" reuseIdentifier="CafeCell" rowHeight="100" id="mr5-fH-8XJ" customClass="CafeTableViewCell" customModule="Nospresso" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mr5-fH-8XJ" id="WOA-ZA-5B9">
@@ -181,21 +185,75 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7O5-wW-jk5">
-                                            <rect key="frame" x="95" y="10" width="42" height="22"/>
+                                            <rect key="frame" x="115" y="10" width="42" height="22"/>
                                             <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
                                             <color key="textColor" name="TextoCinzaMenosEscuro"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nb-PZ-epQ">
+                                            <rect key="frame" x="115" y="34" width="32" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-LightItalic" family="Open Sans" pointSize="14"/>
+                                            <color key="textColor" name="TextoDiscreto"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oth-ON-Ud3">
+                                            <rect key="frame" x="115" y="64.5" width="32" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-LightItalic" family="Open Sans" pointSize="14"/>
+                                            <color key="textColor" name="TextoDiscreto"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NyM-TB-u5f">
+                                            <rect key="frame" x="358.5" y="6" width="45.5" height="88"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpP-id-OcP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="45.5" height="42"/>
+                                                    <color key="tintColor" name="TextoDiscreto"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                    <state key="normal">
+                                                        <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F93-6s-W64">
+                                                    <rect key="frame" x="0.0" y="42" width="45.5" height="46"/>
+                                                    <color key="tintColor" name="TextoDiscreto"/>
+                                                    <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                                    <state key="normal">
+                                                        <imageReference key="image" image="bag.badge.plus" catalog="system" symbolScale="large"/>
+                                                    </state>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$ 2,80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whd-Rf-U9i">
+                                            <rect key="frame" x="301.5" y="64.5" width="49" height="19.5"/>
+                                            <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                            <color key="textColor" name="VerdeDinheiro"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="7O5-wW-jk5" firstAttribute="leading" secondItem="3gI-uc-chD" secondAttribute="trailing" constant="20" id="Oih-2c-TYU"/>
+                                        <constraint firstItem="Whd-Rf-U9i" firstAttribute="firstBaseline" secondItem="Oth-ON-Ud3" secondAttribute="firstBaseline" id="1TY-J2-iqH"/>
+                                        <constraint firstAttribute="bottom" secondItem="Oth-ON-Ud3" secondAttribute="bottom" constant="16" id="5ii-xa-RRj"/>
+                                        <constraint firstItem="Oth-ON-Ud3" firstAttribute="leading" secondItem="1Nb-PZ-epQ" secondAttribute="leading" id="CMb-AT-nQv"/>
+                                        <constraint firstItem="NyM-TB-u5f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1Nb-PZ-epQ" secondAttribute="trailing" constant="8" symbolic="YES" id="CdW-Rb-Gue"/>
+                                        <constraint firstItem="7O5-wW-jk5" firstAttribute="leading" secondItem="3gI-uc-chD" secondAttribute="trailing" constant="40" id="Oih-2c-TYU"/>
+                                        <constraint firstItem="NyM-TB-u5f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7O5-wW-jk5" secondAttribute="trailing" constant="8" symbolic="YES" id="VSE-h1-hc3"/>
                                         <constraint firstItem="7O5-wW-jk5" firstAttribute="top" secondItem="WOA-ZA-5B9" secondAttribute="top" constant="10" id="ZL2-OH-upB"/>
+                                        <constraint firstAttribute="trailing" secondItem="NyM-TB-u5f" secondAttribute="trailing" constant="10" id="a6H-uS-uKa"/>
+                                        <constraint firstItem="1Nb-PZ-epQ" firstAttribute="top" secondItem="7O5-wW-jk5" secondAttribute="bottom" constant="2" id="eUK-D6-Hpm"/>
                                         <constraint firstItem="3gI-uc-chD" firstAttribute="centerY" secondItem="WOA-ZA-5B9" secondAttribute="centerY" id="hkL-Br-7na"/>
+                                        <constraint firstItem="NyM-TB-u5f" firstAttribute="centerY" secondItem="WOA-ZA-5B9" secondAttribute="centerY" id="nPL-NL-UV2"/>
+                                        <constraint firstItem="NyM-TB-u5f" firstAttribute="leading" secondItem="Whd-Rf-U9i" secondAttribute="trailing" constant="8" id="tbO-Pg-zK6"/>
                                         <constraint firstItem="3gI-uc-chD" firstAttribute="leading" secondItem="WOA-ZA-5B9" secondAttribute="leading" constant="20" symbolic="YES" id="vby-KO-lAN"/>
+                                        <constraint firstItem="Whd-Rf-U9i" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Oth-ON-Ud3" secondAttribute="trailing" constant="8" symbolic="YES" id="xcl-7t-zwE"/>
+                                        <constraint firstItem="1Nb-PZ-epQ" firstAttribute="leading" secondItem="7O5-wW-jk5" secondAttribute="leading" id="zRo-4F-J18"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="descricao" destination="1Nb-PZ-epQ" id="92J-cY-VKM"/>
                                     <outlet property="imagemCelula" destination="3gI-uc-chD" id="mJW-W4-wmQ"/>
+                                    <outlet property="intensidade" destination="Oth-ON-Ud3" id="L0z-up-CCo"/>
+                                    <outlet property="preco" destination="Whd-Rf-U9i" id="3ZY-qZ-bAl"/>
+                                    <outlet property="titulo" destination="7O5-wW-jk5" id="Tkn-wU-LW9"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -204,7 +262,7 @@
                             <outlet property="delegate" destination="Nck-Ty-jGr" id="Qw7-AE-Wqn"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="gOg-3a-ZMw"/>
+                    <navigationItem key="navigationItem" title="Cafés" id="gOg-3a-ZMw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tm1-Xf-cBV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -247,8 +305,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bag.badge.plus" catalog="system" width="124" height="128"/>
         <image name="capsulas-inicio" width="136" height="136"/>
         <image name="cart" catalog="system" width="128" height="102"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="maquina-inicio" width="120" height="146"/>
         <image name="xicaras-inicio" width="146" height="147"/>
         <namedColor name="Acessorios">
@@ -261,10 +321,16 @@
             <color red="0.86299997568130493" green="0.72200000286102295" blue="0.53700000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextoCinzaEscuro">
-            <color red="0.23921568627450979" green="0.23921568627450979" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23899999260902405" green="0.23899999260902405" blue="0.23899999260902405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextoCinzaMenosEscuro">
-            <color red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextoDiscreto">
+            <color red="0.5690000057220459" green="0.5690000057220459" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VerdeDinheiro">
+            <color red="0.050999999046325684" green="0.62400001287460327" blue="0.40400001406669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
