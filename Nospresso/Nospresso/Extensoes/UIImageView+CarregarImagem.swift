@@ -15,6 +15,8 @@ extension UIImageView {
             return
         }
         
-        Nuke.loadImage(with: url, into: self)
+        let opcoes = ImageLoadingOptions(placeholder: UIImage(systemName: "photo"))
+        
+        Nuke.loadImage( with: url, options: opcoes, into: self)
     }
 }

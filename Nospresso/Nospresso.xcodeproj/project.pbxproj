@@ -30,6 +30,10 @@
 		CF2CC2CA2538EBA300C32576 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF2CC2C02538EBA300C32576 /* OpenSans-ExtraBold.ttf */; };
 		CF2CC2D62538F49F00C32576 /* CafesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CC2D52538F49F00C32576 /* CafesTableViewController.swift */; };
 		CF2CC2DF2538FAA900C32576 /* CafeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CC2DE2538FAA900C32576 /* CafeTableViewCell.swift */; };
+		CF6A21BB253F77BE001E6617 /* DetalheCafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A21BA253F77BE001E6617 /* DetalheCafeViewController.swift */; };
+		CF6A21C1253F7F7D001E6617 /* ContadorIntensidadeStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A21C0253F7F7D001E6617 /* ContadorIntensidadeStackView.swift */; };
+		CF6A21C6253F8882001E6617 /* DetalheCafePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A21C5253F8882001E6617 /* DetalheCafePresenter.swift */; };
+		CF6A21CB253F8905001E6617 /* DetalheCafe+Protocolos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A21CA253F8905001E6617 /* DetalheCafe+Protocolos.swift */; };
 		CFAD8D0D253639BC00317B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD8D0C253639BC00317B92 /* AppDelegate.swift */; };
 		CFAD8D0F253639BC00317B92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD8D0E253639BC00317B92 /* SceneDelegate.swift */; };
 		CFAD8D11253639BC00317B92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD8D10253639BC00317B92 /* ViewController.swift */; };
@@ -93,6 +97,10 @@
 		CF2CC2C02538EBA300C32576 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		CF2CC2D52538F49F00C32576 /* CafesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesTableViewController.swift; sourceTree = "<group>"; };
 		CF2CC2DE2538FAA900C32576 /* CafeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeTableViewCell.swift; sourceTree = "<group>"; };
+		CF6A21BA253F77BE001E6617 /* DetalheCafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheCafeViewController.swift; sourceTree = "<group>"; };
+		CF6A21C0253F7F7D001E6617 /* ContadorIntensidadeStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorIntensidadeStackView.swift; sourceTree = "<group>"; };
+		CF6A21C5253F8882001E6617 /* DetalheCafePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheCafePresenter.swift; sourceTree = "<group>"; };
+		CF6A21CA253F8905001E6617 /* DetalheCafe+Protocolos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetalheCafe+Protocolos.swift"; sourceTree = "<group>"; };
 		CFAD8D09253639BC00317B92 /* Nospresso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nospresso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD8D0C253639BC00317B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFAD8D0E253639BC00317B92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -225,6 +233,7 @@
 		CF2CC2D42538F48E00C32576 /* Modulos */ = {
 			isa = PBXGroup;
 			children = (
+				CF6A21B9253F779F001E6617 /* DetalheCafe */,
 				CF2CC2DD2538FA9500C32576 /* Cafes */,
 				CF13C1A6253B1795002539AE /* MenuProdutosViewController.swift */,
 			);
@@ -238,6 +247,25 @@
 				CF2CC2D52538F49F00C32576 /* CafesTableViewController.swift */,
 			);
 			path = Cafes;
+			sourceTree = "<group>";
+		};
+		CF6A21B9253F779F001E6617 /* DetalheCafe */ = {
+			isa = PBXGroup;
+			children = (
+				CF6A21BF253F7F56001E6617 /* Componentes */,
+				CF6A21BA253F77BE001E6617 /* DetalheCafeViewController.swift */,
+				CF6A21C5253F8882001E6617 /* DetalheCafePresenter.swift */,
+				CF6A21CA253F8905001E6617 /* DetalheCafe+Protocolos.swift */,
+			);
+			path = DetalheCafe;
+			sourceTree = "<group>";
+		};
+		CF6A21BF253F7F56001E6617 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				CF6A21C0253F7F7D001E6617 /* ContadorIntensidadeStackView.swift */,
+			);
+			path = Componentes;
 			sourceTree = "<group>";
 		};
 		CFAD8D00253639BC00317B92 = {
@@ -610,17 +638,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2CC2DF2538FAA900C32576 /* CafeTableViewCell.swift in Sources */,
+				CF6A21C6253F8882001E6617 /* DetalheCafePresenter.swift in Sources */,
 				CF2CC2D62538F49F00C32576 /* CafesTableViewController.swift in Sources */,
 				CF13C224253B3D3C002539AE /* UIImageView+CarregarImagem.swift in Sources */,
 				CF13C1C6253B304B002539AE /* Pseudonimos.swift in Sources */,
+				CF6A21CB253F8905001E6617 /* DetalheCafe+Protocolos.swift in Sources */,
 				CF13C1B6253B2E70002539AE /* R.generated.swift in Sources */,
 				CF13C1A7253B1795002539AE /* MenuProdutosViewController.swift in Sources */,
 				CFC5073C25365A0200B0DCAE /* Api.swift in Sources */,
+				CF6A21BB253F77BE001E6617 /* DetalheCafeViewController.swift in Sources */,
 				CFF267632537C40F00524D42 /* Cafe.swift in Sources */,
 				CFF267472537C1AC00524D42 /* CategoriaDeAcessorios.swift in Sources */,
 				CF13C1CD253B3200002539AE /* CategoriaDeCafeHeaderView.swift in Sources */,
 				CF13C1AD253B1F5F002539AE /* UIViewController+Barbadas.swift in Sources */,
 				CFAD8D11253639BC00317B92 /* ViewController.swift in Sources */,
+				CF6A21C1253F7F7D001E6617 /* ContadorIntensidadeStackView.swift in Sources */,
 				CFC5074725365A4600B0DCAE /* Endpoint.swift in Sources */,
 				CFC507292536592C00B0DCAE /* Categoria.swift in Sources */,
 				CFAD8D0D253639BC00317B92 /* AppDelegate.swift in Sources */,

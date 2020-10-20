@@ -567,7 +567,12 @@ struct _R: Rswift.Validatable {
       typealias InitialController = UIKit.UITabBarController
 
       let bundle = R.hostingBundle
+      let detalheCafeViewController = StoryboardViewControllerResource<DetalheCafeViewController>(identifier: "DetalheCafeViewController")
       let name = "Main"
+
+      func detalheCafeViewController(_: Void = ()) -> DetalheCafeViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: detalheCafeViewController)
+      }
 
       static func validate() throws {
         if UIKit.UIImage(named: "bag.badge.plus", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'bag.badge.plus' is used in storyboard 'Main', but couldn't be loaded.") }
@@ -585,6 +590,7 @@ struct _R: Rswift.Validatable {
           if UIKit.UIColor(named: "TextoDiscreto", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'TextoDiscreto' is used in storyboard 'Main', but couldn't be loaded.") }
           if UIKit.UIColor(named: "VerdeDinheiro", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Color named 'VerdeDinheiro' is used in storyboard 'Main', but couldn't be loaded.") }
         }
+        if _R.storyboard.main().detalheCafeViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'detalheCafeViewController' could not be loaded from storyboard 'Main' as 'DetalheCafeViewController'.") }
       }
 
       fileprivate init() {}
