@@ -15,6 +15,7 @@
 		CFAA0045253E4FA900798A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAA0043253E4FA900798A24 /* LaunchScreen.storyboard */; };
 		CFAA0050253E4FA900798A24 /* iOS_AutolayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA004F253E4FA900798A24 /* iOS_AutolayoutTests.swift */; };
 		CFAA005B253E4FA900798A24 /* iOS_AutolayoutUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAA005A253E4FA900798A24 /* iOS_AutolayoutUITests.swift */; };
+		CFB0C2F52540F201002AF386 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB0C2F42540F201002AF386 /* UIView+Border.swift */; };
 		CFC5F954253FA5660099BD88 /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5F94A253FA5650099BD88 /* OpenSans-SemiBoldItalic.ttf */; };
 		CFC5F955253FA5660099BD88 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5F94B253FA5650099BD88 /* OpenSans-Italic.ttf */; };
 		CFC5F956253FA5660099BD88 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5F94C253FA5660099BD88 /* OpenSans-Light.ttf */; };
@@ -59,6 +60,7 @@
 		CFAA0056253E4FA900798A24 /* iOS AutolayoutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS AutolayoutUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAA005A253E4FA900798A24 /* iOS_AutolayoutUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_AutolayoutUITests.swift; sourceTree = "<group>"; };
 		CFAA005C253E4FA900798A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFB0C2F42540F201002AF386 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		CFC5F94A253FA5650099BD88 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		CFC5F94B253FA5650099BD88 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		CFC5F94C253FA5660099BD88 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		CFAA0037253E4FA900798A24 /* iOS Autolayout */ = {
 			isa = PBXGroup;
 			children = (
+				CFB0C2EB2540F146002AF386 /* Extensions */,
 				CFC5F948253FA5430099BD88 /* Resources */,
 				CFAA0038253E4FA900798A24 /* AppDelegate.swift */,
 				CFAA003A253E4FA900798A24 /* SceneDelegate.swift */,
@@ -147,6 +150,14 @@
 				CFAA005C253E4FA900798A24 /* Info.plist */,
 			);
 			path = "iOS AutolayoutUITests";
+			sourceTree = "<group>";
+		};
+		CFB0C2EB2540F146002AF386 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFB0C2F42540F201002AF386 /* UIView+Border.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		CFC5F948253FA5430099BD88 /* Resources */ = {
@@ -317,6 +328,7 @@
 				CFAA003D253E4FA900798A24 /* ViewController.swift in Sources */,
 				CFAA0039253E4FA900798A24 /* AppDelegate.swift in Sources */,
 				CFAA003B253E4FA900798A24 /* SceneDelegate.swift in Sources */,
+				CFB0C2F52540F201002AF386 /* UIView+Border.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
