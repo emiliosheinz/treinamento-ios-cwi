@@ -28,6 +28,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vds-T4-3S8" kind="relationship" relationship="viewControllers" id="XyS-Ld-2hs"/>
+                        <segue destination="1HS-FL-zBm" kind="relationship" relationship="viewControllers" id="2Ea-c8-rLm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8RM-XH-mxb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -41,8 +42,59 @@
                     <view key="view" contentMode="scaleToFill" id="Cyn-60-r9J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXU-A9-var">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oNF-uR-7nf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="520"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qzR-SN-JrK">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="520"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_2" translatesAutoresizingMaskIntoConstraints="NO" id="D8m-ad-VWJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="438"/>
+                                                    </imageView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9hF-63-1QZ">
+                                                        <rect key="frame" x="0.0" y="370" width="414" height="150"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="150" id="fvY-9A-kRU"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="D8m-ad-VWJ" firstAttribute="top" secondItem="qzR-SN-JrK" secondAttribute="top" id="7Ji-sZ-GgY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="D8m-ad-VWJ" secondAttribute="trailing" id="8uI-rk-R7d"/>
+                                                    <constraint firstAttribute="height" constant="520" id="EKP-El-FQA"/>
+                                                    <constraint firstItem="9hF-63-1QZ" firstAttribute="leading" secondItem="qzR-SN-JrK" secondAttribute="leading" id="H0U-xc-H4c"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9hF-63-1QZ" secondAttribute="trailing" id="K1e-XR-Iou"/>
+                                                    <constraint firstItem="D8m-ad-VWJ" firstAttribute="leading" secondItem="qzR-SN-JrK" secondAttribute="leading" id="jSn-RW-VMf"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9hF-63-1QZ" secondAttribute="bottom" id="wPw-mu-ybr"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="oNF-uR-7nf" secondAttribute="trailing" id="Kk3-c1-j3p"/>
+                                    <constraint firstItem="oNF-uR-7nf" firstAttribute="width" secondItem="YXU-A9-var" secondAttribute="width" id="LsX-r9-LZF"/>
+                                    <constraint firstItem="oNF-uR-7nf" firstAttribute="top" secondItem="YXU-A9-var" secondAttribute="top" id="N8D-3m-Ths"/>
+                                    <constraint firstAttribute="bottom" secondItem="oNF-uR-7nf" secondAttribute="bottom" id="iAT-wv-mSx"/>
+                                    <constraint firstItem="oNF-uR-7nf" firstAttribute="leading" secondItem="YXU-A9-var" secondAttribute="leading" id="kt0-wa-YmO"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ays-zH-0q2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ays-zH-0q2" firstAttribute="bottom" secondItem="YXU-A9-var" secondAttribute="bottom" id="8pj-dc-lFk"/>
+                            <constraint firstItem="ays-zH-0q2" firstAttribute="trailing" secondItem="YXU-A9-var" secondAttribute="trailing" id="WT0-xB-Ols"/>
+                            <constraint firstItem="YXU-A9-var" firstAttribute="leading" secondItem="ays-zH-0q2" secondAttribute="leading" id="cer-0q-aEg"/>
+                            <constraint firstItem="YXU-A9-var" firstAttribute="top" secondItem="ays-zH-0q2" secondAttribute="top" id="i9S-Bt-VAa"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Croissant" selectedImage="circles.hexagongrid.fill" catalog="system" id="s0d-6f-vVn">
                         <color key="badgeColor" systemColor="linkColor"/>
@@ -89,7 +141,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Croissant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyk-Vu-02n">
-                                                                        <rect key="frame" x="135.5" y="0.0" width="81" height="20"/>
+                                                                        <rect key="frame" x="133" y="0.0" width="86.5" height="20"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="19"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -104,16 +156,16 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MvN-sb-guV">
-                                                                <rect key="frame" x="0.0" y="285" width="173" height="45"/>
+                                                                <rect key="frame" x="0.0" y="278" width="183" height="52"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chocolate Croissant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLA-Ao-LK6">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="173" height="22.5"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="183" height="26"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="19"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$8.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYz-8l-hr5">
-                                                                        <rect key="frame" x="0.0" y="22.5" width="173" height="22.5"/>
+                                                                        <rect key="frame" x="0.0" y="26" width="183" height="26"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="19"/>
                                                                         <color key="textColor" name="MoneyGreen"/>
                                                                         <nil key="highlightedColor"/>
@@ -166,7 +218,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="62"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztH-Mu-pr3">
-                                                                        <rect key="frame" x="20" y="21.5" width="60.5" height="19"/>
+                                                                        <rect key="frame" x="20" y="20" width="64.5" height="22"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -200,7 +252,7 @@
                                                                 <rect key="frame" x="177" y="0.0" width="177" height="62"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFT-Nl-z3F">
-                                                                        <rect key="frame" x="20" y="21.5" width="30.5" height="19"/>
+                                                                        <rect key="frame" x="20" y="20" width="29.5" height="22"/>
                                                                         <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
                                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
@@ -307,14 +359,15 @@
     <resources>
         <image name="arrow-down" width="28.5" height="15.5"/>
         <image name="background" width="750" height="751"/>
+        <image name="background_2" width="375" height="438"/>
         <image name="circles.hexagongrid.fill" catalog="system" width="128" height="112"/>
         <image name="close-icon" width="34" height="35"/>
         <image name="heart-icon" width="41" height="34"/>
         <namedColor name="GrayText">
-            <color red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5690000057220459" green="0.5690000057220459" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="GrayText">
-            <color red="0.5690000057220459" green="0.5690000057220459" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="MoneyGreen">
             <color red="0.050999999046325684" green="0.62400001287460327" blue="0.40400001406669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
