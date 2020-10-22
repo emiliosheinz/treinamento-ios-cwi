@@ -42,6 +42,14 @@
 		CFAD8D19253639BD00317B92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFAD8D17253639BD00317B92 /* LaunchScreen.storyboard */; };
 		CFAD8D24253639BD00317B92 /* NospressoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD8D23253639BD00317B92 /* NospressoTests.swift */; };
 		CFAD8D2F253639BD00317B92 /* NospressoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAD8D2E253639BD00317B92 /* NospressoUITests.swift */; };
+		CFBB559625421D1600B91EF8 /* MedidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB559525421D1600B91EF8 /* MedidaView.swift */; };
+		CFBB559B25421D2200B91EF8 /* MedidaView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBB559A25421D2200B91EF8 /* MedidaView.xib */; };
+		CFBB55B82542281800B91EF8 /* MaquinasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB55B62542281800B91EF8 /* MaquinasViewController.swift */; };
+		CFBB55B92542281800B91EF8 /* MaquinasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBB55B72542281800B91EF8 /* MaquinasViewController.xib */; };
+		CFBB55C025422C4F00B91EF8 /* MaquinaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB55BE25422C4F00B91EF8 /* MaquinaCollectionViewCell.swift */; };
+		CFBB55C125422C4F00B91EF8 /* MaquinaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBB55BF25422C4F00B91EF8 /* MaquinaCollectionViewCell.xib */; };
+		CFBB55C625422F6A00B91EF8 /* MaquinasProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB55C525422F6A00B91EF8 /* MaquinasProtocols.swift */; };
+		CFBB55CB25422FB400B91EF8 /* MaquinasPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB55CA25422FB400B91EF8 /* MaquinasPresenter.swift */; };
 		CFC507292536592C00B0DCAE /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC507282536592C00B0DCAE /* Categoria.swift */; };
 		CFC50736253659B400B0DCAE /* Maquina.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC50735253659B400B0DCAE /* Maquina.swift */; };
 		CFC5073C25365A0200B0DCAE /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5073B25365A0200B0DCAE /* Api.swift */; };
@@ -115,6 +123,14 @@
 		CFAD8D2A253639BD00317B92 /* NospressoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NospressoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFAD8D2E253639BD00317B92 /* NospressoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NospressoUITests.swift; sourceTree = "<group>"; };
 		CFAD8D30253639BD00317B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFBB559525421D1600B91EF8 /* MedidaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedidaView.swift; sourceTree = "<group>"; };
+		CFBB559A25421D2200B91EF8 /* MedidaView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MedidaView.xib; sourceTree = "<group>"; };
+		CFBB55B62542281800B91EF8 /* MaquinasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinasViewController.swift; sourceTree = "<group>"; };
+		CFBB55B72542281800B91EF8 /* MaquinasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaquinasViewController.xib; sourceTree = "<group>"; };
+		CFBB55BE25422C4F00B91EF8 /* MaquinaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinaCollectionViewCell.swift; sourceTree = "<group>"; };
+		CFBB55BF25422C4F00B91EF8 /* MaquinaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaquinaCollectionViewCell.xib; sourceTree = "<group>"; };
+		CFBB55C525422F6A00B91EF8 /* MaquinasProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinasProtocols.swift; sourceTree = "<group>"; };
+		CFBB55CA25422FB400B91EF8 /* MaquinasPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinasPresenter.swift; sourceTree = "<group>"; };
 		CFC507282536592C00B0DCAE /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
 		CFC50735253659B400B0DCAE /* Maquina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maquina.swift; sourceTree = "<group>"; };
 		CFC5073B25365A0200B0DCAE /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
@@ -233,6 +249,7 @@
 		CF2CC2D42538F48E00C32576 /* Modulos */ = {
 			isa = PBXGroup;
 			children = (
+				CFBB55B5254227FA00B91EF8 /* Maquinas */,
 				CF6A21B9253F779F001E6617 /* DetalheCafe */,
 				CF2CC2DD2538FA9500C32576 /* Cafes */,
 				CF13C1A6253B1795002539AE /* MenuProdutosViewController.swift */,
@@ -264,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				CF6A21C0253F7F7D001E6617 /* ContadorIntensidadeStackView.swift */,
+				CFBB559525421D1600B91EF8 /* MedidaView.swift */,
+				CFBB559A25421D2200B91EF8 /* MedidaView.xib */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -326,6 +345,27 @@
 				CFAD8D30253639BD00317B92 /* Info.plist */,
 			);
 			path = NospressoUITests;
+			sourceTree = "<group>";
+		};
+		CFBB55B5254227FA00B91EF8 /* Maquinas */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB55BD25422C2C00B91EF8 /* Components */,
+				CFBB55B62542281800B91EF8 /* MaquinasViewController.swift */,
+				CFBB55CA25422FB400B91EF8 /* MaquinasPresenter.swift */,
+				CFBB55B72542281800B91EF8 /* MaquinasViewController.xib */,
+				CFBB55C525422F6A00B91EF8 /* MaquinasProtocols.swift */,
+			);
+			path = Maquinas;
+			sourceTree = "<group>";
+		};
+		CFBB55BD25422C2C00B91EF8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CFBB55BE25422C4F00B91EF8 /* MaquinaCollectionViewCell.swift */,
+				CFBB55BF25422C4F00B91EF8 /* MaquinaCollectionViewCell.xib */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		CFC507272536591C00B0DCAE /* Modelos */ = {
@@ -465,8 +505,11 @@
 				CF2CC2C42538EBA300C32576 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				CFAD8D19253639BD00317B92 /* LaunchScreen.storyboard in Resources */,
 				CF2CC2C72538EBA300C32576 /* OpenSans-LightItalic.ttf in Resources */,
+				CFBB559B25421D2200B91EF8 /* MedidaView.xib in Resources */,
 				CF2CC2C92538EBA300C32576 /* OpenSans-BoldItalic.ttf in Resources */,
 				CFAD8D16253639BD00317B92 /* Assets.xcassets in Resources */,
+				CFBB55B92542281800B91EF8 /* MaquinasViewController.xib in Resources */,
+				CFBB55C125422C4F00B91EF8 /* MaquinaCollectionViewCell.xib in Resources */,
 				CF2CC2C62538EBA300C32576 /* OpenSans-Bold.ttf in Resources */,
 				CF2CC2C22538EBA300C32576 /* OpenSans-Light.ttf in Resources */,
 				CF2CC2C32538EBA300C32576 /* OpenSans-SemiBold.ttf in Resources */,
@@ -639,8 +682,12 @@
 			files = (
 				CF2CC2DF2538FAA900C32576 /* CafeTableViewCell.swift in Sources */,
 				CF6A21C6253F8882001E6617 /* DetalheCafePresenter.swift in Sources */,
+				CFBB559625421D1600B91EF8 /* MedidaView.swift in Sources */,
 				CF2CC2D62538F49F00C32576 /* CafesTableViewController.swift in Sources */,
 				CF13C224253B3D3C002539AE /* UIImageView+CarregarImagem.swift in Sources */,
+				CFBB55CB25422FB400B91EF8 /* MaquinasPresenter.swift in Sources */,
+				CFBB55C025422C4F00B91EF8 /* MaquinaCollectionViewCell.swift in Sources */,
+				CFBB55C625422F6A00B91EF8 /* MaquinasProtocols.swift in Sources */,
 				CF13C1C6253B304B002539AE /* Pseudonimos.swift in Sources */,
 				CF6A21CB253F8905001E6617 /* DetalheCafe+Protocolos.swift in Sources */,
 				CF13C1B6253B2E70002539AE /* R.generated.swift in Sources */,
@@ -653,6 +700,7 @@
 				CF13C1AD253B1F5F002539AE /* UIViewController+Barbadas.swift in Sources */,
 				CFAD8D11253639BC00317B92 /* ViewController.swift in Sources */,
 				CF6A21C1253F7F7D001E6617 /* ContadorIntensidadeStackView.swift in Sources */,
+				CFBB55B82542281800B91EF8 /* MaquinasViewController.swift in Sources */,
 				CFC5074725365A4600B0DCAE /* Endpoint.swift in Sources */,
 				CFC507292536592C00B0DCAE /* Categoria.swift in Sources */,
 				CFAD8D0D253639BC00317B92 /* AppDelegate.swift in Sources */,

@@ -9,16 +9,22 @@ import UIKit
 
 class MenuProdutosViewController: UIViewController {
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        super.prepare(for: segue, sender: sender)
-//
-//        navigationController?.setNavigationBarHidden(false, animated: true)
-//    }
+    @IBOutlet weak var maquinasView: UIView!
+    
+    @objc
+    private func tocouEmMaquinas(_ remetente: Any) {
+        let vc = MaquinasViewController(nib: R.nib.maquinasViewController)
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         removerTextoDoBotaoVoltar()
+        
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(self.tocouEmMaquinas))
+        maquinasView.addGestureRecognizer(recognizer)
     }
     
     override func viewWillAppear(_ animated: Bool) {

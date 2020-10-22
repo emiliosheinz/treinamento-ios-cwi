@@ -151,6 +151,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YC3-Zk-r0b"/>
+                    <connections>
+                        <outlet property="maquinasView" destination="XTq-5w-JMm" id="4nN-Ui-uEh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JdG-Ue-cSm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="9uz-ag-Ovm">
@@ -312,10 +315,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="haN-2d-vuO">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="745"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="bu6-Pk-fkQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="328"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="510"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsulas-inicio" translatesAutoresizingMaskIntoConstraints="NO" id="AiI-IX-wRW">
                                                 <rect key="frame" x="15" y="15" width="384" height="150"/>
@@ -331,23 +334,52 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xqs-To-Ejy">
-                                                <rect key="frame" x="15" y="203" width="384" height="110"/>
+                                                <rect key="frame" x="15" y="203" width="384" height="124"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="O6h-SJ-hPg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="110"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="192" height="124"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="O69-Ps-M95" customClass="ContadorIntensidadeStackView" customModule="Nospresso" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="192" height="110"/>
                                                             </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NY-jS-Zck">
+                                                                <rect key="frame" x="0.0" y="110" width="192" height="14"/>
+                                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="12"/>
+                                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
                                                         </subviews>
                                                     </stackView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdV-rw-Qsg">
-                                                        <rect key="frame" x="192" y="0.0" width="192" height="110"/>
+                                                        <rect key="frame" x="192" y="0.0" width="192" height="124"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DtW-cC-ipo">
+                                                <rect key="frame" x="15" y="327" width="384" height="28"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="28" id="Grz-mL-i06"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FORMAS DE DEGUSTAÇÃO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmp-jp-CS3">
+                                                <rect key="frame" x="15" y="355" width="384" height="20"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tvm-Vn-7al">
+                                                <rect key="frame" x="15" y="375" width="384" height="10"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="NI5-tW-ncg"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wj-6Q-off">
+                                                <rect key="frame" x="15" y="385" width="384" height="110"/>
                                             </stackView>
                                         </subviews>
                                         <edgeInsets key="layoutMargins" top="15" left="15" bottom="15" right="15"/>
@@ -361,18 +393,32 @@
                                     <constraint firstAttribute="trailing" secondItem="bu6-Pk-fkQ" secondAttribute="trailing" id="adq-Lb-nEC"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8UW-GO-sIP">
+                                <rect key="frame" x="60" y="801" width="294" height="41"/>
+                                <color key="backgroundColor" name="VerdaoBotao"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="12" maxX="0.0" maxY="12"/>
+                                <state key="normal" title="Adicionar à sacola"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uTh-un-HzX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="haN-2d-vuO" firstAttribute="top" secondItem="uTh-un-HzX" secondAttribute="top" id="F5v-Dy-Rs2"/>
-                            <constraint firstItem="uTh-un-HzX" firstAttribute="bottom" secondItem="haN-2d-vuO" secondAttribute="bottom" id="Vwj-Z0-Aon"/>
+                            <constraint firstItem="uTh-un-HzX" firstAttribute="trailing" secondItem="8UW-GO-sIP" secondAttribute="trailing" constant="60" id="IZN-1l-MQ8"/>
+                            <constraint firstItem="8UW-GO-sIP" firstAttribute="leading" secondItem="uTh-un-HzX" secondAttribute="leading" constant="60" id="KaA-Rg-VM2"/>
+                            <constraint firstItem="8UW-GO-sIP" firstAttribute="top" secondItem="haN-2d-vuO" secondAttribute="bottom" constant="12" id="Vwj-Z0-Aon"/>
                             <constraint firstItem="haN-2d-vuO" firstAttribute="leading" secondItem="uTh-un-HzX" secondAttribute="leading" id="iND-fy-o9z"/>
+                            <constraint firstItem="uTh-un-HzX" firstAttribute="bottom" secondItem="8UW-GO-sIP" secondAttribute="bottom" constant="20" id="kky-QX-sKW"/>
                             <constraint firstItem="uTh-un-HzX" firstAttribute="trailing" secondItem="haN-2d-vuO" secondAttribute="trailing" id="oKw-T9-BXl"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cafeImageView" destination="AiI-IX-wRW" id="yIp-jx-7Aa"/>
+                        <outlet property="intensidadeLabel" destination="3NY-jS-Zck" id="nza-58-1e9"/>
+                        <outlet property="intensidadeStackView" destination="O69-Ps-M95" id="enG-NP-R4G"/>
+                        <outlet property="medidasStackView" destination="7Wj-6Q-off" id="3An-wo-HFr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0s-Iu-y2F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -404,6 +450,9 @@
         </namedColor>
         <namedColor name="TextoDiscreto">
             <color red="0.5690000057220459" green="0.5690000057220459" blue="0.5690000057220459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VerdaoBotao">
+            <color red="0.47843137254901957" green="0.69803921568627447" blue="0.42745098039215684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="VerdeDinheiro">
             <color red="0.050999999046325684" green="0.62400001287460327" blue="0.40400001406669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
