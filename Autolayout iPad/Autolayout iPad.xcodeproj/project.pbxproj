@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFC5D6532543A4AB002BA1A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5D6522543A4AB002BA1A9 /* AppDelegate.swift */; };
+		CFC5D6552543A4AB002BA1A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5D6542543A4AB002BA1A9 /* SceneDelegate.swift */; };
+		CFC5D6572543A4AB002BA1A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5D6562543A4AB002BA1A9 /* ViewController.swift */; };
+		CFC5D65A2543A4AB002BA1A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D6582543A4AB002BA1A9 /* Main.storyboard */; };
+		CFC5D65C2543A4AC002BA1A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D65B2543A4AC002BA1A9 /* Assets.xcassets */; };
+		CFC5D65F2543A4AC002BA1A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D65D2543A4AC002BA1A9 /* LaunchScreen.storyboard */; };
+		CFC5D66A2543A4AC002BA1A9 /* Autolayout_iPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5D6692543A4AC002BA1A9 /* Autolayout_iPadTests.swift */; };
+		CFC5D6752543A4AC002BA1A9 /* Autolayout_iPadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5D6742543A4AC002BA1A9 /* Autolayout_iPadUITests.swift */; };
+		CFC5D6942543AB34002BA1A9 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D68A2543AB33002BA1A9 /* Lato-Light.ttf */; };
+		CFC5D6952543AB34002BA1A9 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D68B2543AB33002BA1A9 /* Lato-Italic.ttf */; };
+		CFC5D6962543AB34002BA1A9 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D68C2543AB33002BA1A9 /* Lato-BoldItalic.ttf */; };
+		CFC5D6972543AB34002BA1A9 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D68D2543AB33002BA1A9 /* Lato-Regular.ttf */; };
+		CFC5D6982543AB34002BA1A9 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D68E2543AB33002BA1A9 /* Lato-Black.ttf */; };
+		CFC5D6992543AB34002BA1A9 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D68F2543AB34002BA1A9 /* Lato-Thin.ttf */; };
+		CFC5D69A2543AB34002BA1A9 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D6902543AB34002BA1A9 /* Lato-ThinItalic.ttf */; };
+		CFC5D69B2543AB34002BA1A9 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D6912543AB34002BA1A9 /* Lato-BlackItalic.ttf */; };
+		CFC5D69C2543AB34002BA1A9 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D6922543AB34002BA1A9 /* Lato-Bold.ttf */; };
+		CFC5D69D2543AB34002BA1A9 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFC5D6932543AB34002BA1A9 /* Lato-LightItalic.ttf */; };
+		CFC5D6A32543B248002BA1A9 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC5D6A22543B248002BA1A9 /* UIView+Border.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFC5D6662543A4AC002BA1A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFC5D6472543A4AB002BA1A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFC5D64E2543A4AB002BA1A9;
+			remoteInfo = "Autolayout iPad";
+		};
+		CFC5D6712543A4AC002BA1A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFC5D6472543A4AB002BA1A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFC5D64E2543A4AB002BA1A9;
+			remoteInfo = "Autolayout iPad";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFC5D64F2543A4AB002BA1A9 /* Autolayout iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Autolayout iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC5D6522543A4AB002BA1A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFC5D6542543A4AB002BA1A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CFC5D6562543A4AB002BA1A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFC5D6592543A4AB002BA1A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFC5D65B2543A4AC002BA1A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFC5D65E2543A4AC002BA1A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFC5D6602543A4AC002BA1A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC5D6652543A4AC002BA1A9 /* Autolayout iPadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Autolayout iPadTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC5D6692543A4AC002BA1A9 /* Autolayout_iPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autolayout_iPadTests.swift; sourceTree = "<group>"; };
+		CFC5D66B2543A4AC002BA1A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC5D6702543A4AC002BA1A9 /* Autolayout iPadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Autolayout iPadUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFC5D6742543A4AC002BA1A9 /* Autolayout_iPadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Autolayout_iPadUITests.swift; sourceTree = "<group>"; };
+		CFC5D6762543A4AC002BA1A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFC5D68A2543AB33002BA1A9 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Light.ttf"; sourceTree = "<group>"; };
+		CFC5D68B2543AB33002BA1A9 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Italic.ttf"; sourceTree = "<group>"; };
+		CFC5D68C2543AB33002BA1A9 /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CFC5D68D2543AB33002BA1A9 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		CFC5D68E2543AB33002BA1A9 /* Lato-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Black.ttf"; sourceTree = "<group>"; };
+		CFC5D68F2543AB34002BA1A9 /* Lato-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Thin.ttf"; sourceTree = "<group>"; };
+		CFC5D6902543AB34002BA1A9 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-ThinItalic.ttf"; sourceTree = "<group>"; };
+		CFC5D6912543AB34002BA1A9 /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-BlackItalic.ttf"; sourceTree = "<group>"; };
+		CFC5D6922543AB34002BA1A9 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		CFC5D6932543AB34002BA1A9 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-LightItalic.ttf"; sourceTree = "<group>"; };
+		CFC5D6A22543B248002BA1A9 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFC5D64C2543A4AB002BA1A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC5D6622543A4AC002BA1A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC5D66D2543A4AC002BA1A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFC5D6462543A4AB002BA1A9 = {
+			isa = PBXGroup;
+			children = (
+				CFC5D6512543A4AB002BA1A9 /* Autolayout iPad */,
+				CFC5D6682543A4AC002BA1A9 /* Autolayout iPadTests */,
+				CFC5D6732543A4AC002BA1A9 /* Autolayout iPadUITests */,
+				CFC5D6502543A4AB002BA1A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFC5D6502543A4AB002BA1A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5D64F2543A4AB002BA1A9 /* Autolayout iPad.app */,
+				CFC5D6652543A4AC002BA1A9 /* Autolayout iPadTests.xctest */,
+				CFC5D6702543A4AC002BA1A9 /* Autolayout iPadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFC5D6512543A4AB002BA1A9 /* Autolayout iPad */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5D6A12543B233002BA1A9 /* Extensions */,
+				CFC5D6852543AB16002BA1A9 /* Resources */,
+				CFC5D6522543A4AB002BA1A9 /* AppDelegate.swift */,
+				CFC5D6542543A4AB002BA1A9 /* SceneDelegate.swift */,
+				CFC5D6562543A4AB002BA1A9 /* ViewController.swift */,
+				CFC5D6582543A4AB002BA1A9 /* Main.storyboard */,
+				CFC5D65B2543A4AC002BA1A9 /* Assets.xcassets */,
+				CFC5D65D2543A4AC002BA1A9 /* LaunchScreen.storyboard */,
+				CFC5D6602543A4AC002BA1A9 /* Info.plist */,
+			);
+			path = "Autolayout iPad";
+			sourceTree = "<group>";
+		};
+		CFC5D6682543A4AC002BA1A9 /* Autolayout iPadTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5D6692543A4AC002BA1A9 /* Autolayout_iPadTests.swift */,
+				CFC5D66B2543A4AC002BA1A9 /* Info.plist */,
+			);
+			path = "Autolayout iPadTests";
+			sourceTree = "<group>";
+		};
+		CFC5D6732543A4AC002BA1A9 /* Autolayout iPadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5D6742543A4AC002BA1A9 /* Autolayout_iPadUITests.swift */,
+				CFC5D6762543A4AC002BA1A9 /* Info.plist */,
+			);
+			path = "Autolayout iPadUITests";
+			sourceTree = "<group>";
+		};
+		CFC5D6852543AB16002BA1A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5D6862543AB20002BA1A9 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CFC5D6862543AB20002BA1A9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5D68E2543AB33002BA1A9 /* Lato-Black.ttf */,
+				CFC5D6912543AB34002BA1A9 /* Lato-BlackItalic.ttf */,
+				CFC5D6922543AB34002BA1A9 /* Lato-Bold.ttf */,
+				CFC5D68C2543AB33002BA1A9 /* Lato-BoldItalic.ttf */,
+				CFC5D68B2543AB33002BA1A9 /* Lato-Italic.ttf */,
+				CFC5D68A2543AB33002BA1A9 /* Lato-Light.ttf */,
+				CFC5D6932543AB34002BA1A9 /* Lato-LightItalic.ttf */,
+				CFC5D68D2543AB33002BA1A9 /* Lato-Regular.ttf */,
+				CFC5D68F2543AB34002BA1A9 /* Lato-Thin.ttf */,
+				CFC5D6902543AB34002BA1A9 /* Lato-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CFC5D6A12543B233002BA1A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CFC5D6A22543B248002BA1A9 /* UIView+Border.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFC5D64E2543A4AB002BA1A9 /* Autolayout iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC5D6792543A4AC002BA1A9 /* Build configuration list for PBXNativeTarget "Autolayout iPad" */;
+			buildPhases = (
+				CFC5D64B2543A4AB002BA1A9 /* Sources */,
+				CFC5D64C2543A4AB002BA1A9 /* Frameworks */,
+				CFC5D64D2543A4AB002BA1A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Autolayout iPad";
+			productName = "Autolayout iPad";
+			productReference = CFC5D64F2543A4AB002BA1A9 /* Autolayout iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFC5D6642543A4AC002BA1A9 /* Autolayout iPadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC5D67C2543A4AC002BA1A9 /* Build configuration list for PBXNativeTarget "Autolayout iPadTests" */;
+			buildPhases = (
+				CFC5D6612543A4AC002BA1A9 /* Sources */,
+				CFC5D6622543A4AC002BA1A9 /* Frameworks */,
+				CFC5D6632543A4AC002BA1A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFC5D6672543A4AC002BA1A9 /* PBXTargetDependency */,
+			);
+			name = "Autolayout iPadTests";
+			productName = "Autolayout iPadTests";
+			productReference = CFC5D6652543A4AC002BA1A9 /* Autolayout iPadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CFC5D66F2543A4AC002BA1A9 /* Autolayout iPadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFC5D67F2543A4AC002BA1A9 /* Build configuration list for PBXNativeTarget "Autolayout iPadUITests" */;
+			buildPhases = (
+				CFC5D66C2543A4AC002BA1A9 /* Sources */,
+				CFC5D66D2543A4AC002BA1A9 /* Frameworks */,
+				CFC5D66E2543A4AC002BA1A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFC5D6722543A4AC002BA1A9 /* PBXTargetDependency */,
+			);
+			name = "Autolayout iPadUITests";
+			productName = "Autolayout iPadUITests";
+			productReference = CFC5D6702543A4AC002BA1A9 /* Autolayout iPadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFC5D6472543A4AB002BA1A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					CFC5D64E2543A4AB002BA1A9 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					CFC5D6642543A4AC002BA1A9 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = CFC5D64E2543A4AB002BA1A9;
+					};
+					CFC5D66F2543A4AC002BA1A9 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = CFC5D64E2543A4AB002BA1A9;
+					};
+				};
+			};
+			buildConfigurationList = CFC5D64A2543A4AB002BA1A9 /* Build configuration list for PBXProject "Autolayout iPad" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFC5D6462543A4AB002BA1A9;
+			productRefGroup = CFC5D6502543A4AB002BA1A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFC5D64E2543A4AB002BA1A9 /* Autolayout iPad */,
+				CFC5D6642543A4AC002BA1A9 /* Autolayout iPadTests */,
+				CFC5D66F2543A4AC002BA1A9 /* Autolayout iPadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFC5D64D2543A4AB002BA1A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC5D6952543AB34002BA1A9 /* Lato-Italic.ttf in Resources */,
+				CFC5D6992543AB34002BA1A9 /* Lato-Thin.ttf in Resources */,
+				CFC5D65F2543A4AC002BA1A9 /* LaunchScreen.storyboard in Resources */,
+				CFC5D65C2543A4AC002BA1A9 /* Assets.xcassets in Resources */,
+				CFC5D69B2543AB34002BA1A9 /* Lato-BlackItalic.ttf in Resources */,
+				CFC5D6962543AB34002BA1A9 /* Lato-BoldItalic.ttf in Resources */,
+				CFC5D6982543AB34002BA1A9 /* Lato-Black.ttf in Resources */,
+				CFC5D69C2543AB34002BA1A9 /* Lato-Bold.ttf in Resources */,
+				CFC5D6972543AB34002BA1A9 /* Lato-Regular.ttf in Resources */,
+				CFC5D69A2543AB34002BA1A9 /* Lato-ThinItalic.ttf in Resources */,
+				CFC5D65A2543A4AB002BA1A9 /* Main.storyboard in Resources */,
+				CFC5D6942543AB34002BA1A9 /* Lato-Light.ttf in Resources */,
+				CFC5D69D2543AB34002BA1A9 /* Lato-LightItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC5D6632543A4AC002BA1A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC5D66E2543A4AC002BA1A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFC5D64B2543A4AB002BA1A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC5D6A32543B248002BA1A9 /* UIView+Border.swift in Sources */,
+				CFC5D6572543A4AB002BA1A9 /* ViewController.swift in Sources */,
+				CFC5D6532543A4AB002BA1A9 /* AppDelegate.swift in Sources */,
+				CFC5D6552543A4AB002BA1A9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC5D6612543A4AC002BA1A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC5D66A2543A4AC002BA1A9 /* Autolayout_iPadTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFC5D66C2543A4AC002BA1A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFC5D6752543A4AC002BA1A9 /* Autolayout_iPadUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFC5D6672543A4AC002BA1A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFC5D64E2543A4AB002BA1A9 /* Autolayout iPad */;
+			targetProxy = CFC5D6662543A4AC002BA1A9 /* PBXContainerItemProxy */;
+		};
+		CFC5D6722543A4AC002BA1A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFC5D64E2543A4AB002BA1A9 /* Autolayout iPad */;
+			targetProxy = CFC5D6712543A4AC002BA1A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFC5D6582543A4AB002BA1A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFC5D6592543A4AB002BA1A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFC5D65D2543A4AC002BA1A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFC5D65E2543A4AC002BA1A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFC5D6772543A4AC002BA1A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFC5D6782543A4AC002BA1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFC5D67A2543A4AC002BA1A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HRRUS88V3;
+				INFOPLIST_FILE = "Autolayout iPad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.treinamento.ipadautolayout.emilio.Autolayout-iPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CFC5D67B2543A4AC002BA1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HRRUS88V3;
+				INFOPLIST_FILE = "Autolayout iPad/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.treinamento.ipadautolayout.emilio.Autolayout-iPad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CFC5D67D2543A4AC002BA1A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HRRUS88V3;
+				INFOPLIST_FILE = "Autolayout iPadTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.treinamento.ipadautolayout.emilio.Autolayout-iPadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autolayout iPad.app/Autolayout iPad";
+			};
+			name = Debug;
+		};
+		CFC5D67E2543A4AC002BA1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HRRUS88V3;
+				INFOPLIST_FILE = "Autolayout iPadTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.treinamento.ipadautolayout.emilio.Autolayout-iPadTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autolayout iPad.app/Autolayout iPad";
+			};
+			name = Release;
+		};
+		CFC5D6802543A4AC002BA1A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HRRUS88V3;
+				INFOPLIST_FILE = "Autolayout iPadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.treinamento.ipadautolayout.emilio.Autolayout-iPadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Autolayout iPad";
+			};
+			name = Debug;
+		};
+		CFC5D6812543A4AC002BA1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7HRRUS88V3;
+				INFOPLIST_FILE = "Autolayout iPadUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.cwi.treinamento.ipadautolayout.emilio.Autolayout-iPadUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Autolayout iPad";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFC5D64A2543A4AB002BA1A9 /* Build configuration list for PBXProject "Autolayout iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC5D6772543A4AC002BA1A9 /* Debug */,
+				CFC5D6782543A4AC002BA1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC5D6792543A4AC002BA1A9 /* Build configuration list for PBXNativeTarget "Autolayout iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC5D67A2543A4AC002BA1A9 /* Debug */,
+				CFC5D67B2543A4AC002BA1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC5D67C2543A4AC002BA1A9 /* Build configuration list for PBXNativeTarget "Autolayout iPadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC5D67D2543A4AC002BA1A9 /* Debug */,
+				CFC5D67E2543A4AC002BA1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFC5D67F2543A4AC002BA1A9 /* Build configuration list for PBXNativeTarget "Autolayout iPadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC5D6802543A4AC002BA1A9 /* Debug */,
+				CFC5D6812543A4AC002BA1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CFC5D6472543A4AB002BA1A9 /* Project object */;
+}
