@@ -85,7 +85,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375.5" height="115"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search..." textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="ZvY-wu-SCp">
-                                                        <rect key="frame" x="110" y="46" width="265.5" height="23.5"/>
+                                                        <rect key="frame" x="110" y="46.5" width="265.5" height="22.5"/>
                                                         <color key="textColor" name="BluishGray"/>
                                                         <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -222,26 +222,26 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="997" height="70"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boards shared with you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wNi-AX-kt6">
-                                                        <rect key="frame" x="0.0" y="0.0" width="314" height="36"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="317" height="35"/>
                                                         <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="30"/>
                                                         <color key="textColor" name="LightBlack"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Boards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DO-JI-5k9">
-                                                        <rect key="frame" x="0.0" y="49.5" width="82" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="83" height="20"/>
                                                         <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
                                                         <color key="textColor" name="BluishGray"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rigth_arrow_icon" translatesAutoresizingMaskIntoConstraints="NO" id="6cd-sv-aOK">
-                                                        <rect key="frame" x="92" y="50" width="20" height="20"/>
+                                                        <rect key="frame" x="93" y="50" width="20" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="yQt-tH-3sF"/>
                                                             <constraint firstAttribute="width" constant="20" id="zfH-Va-mkb"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shared with you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYR-hc-zP3">
-                                                        <rect key="frame" x="122" y="49.5" width="122.5" height="20.5"/>
+                                                        <rect key="frame" x="123" y="50" width="123" height="20"/>
                                                         <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="17"/>
                                                         <color key="textColor" name="BluishDarkGray"/>
                                                         <nil key="highlightedColor"/>
