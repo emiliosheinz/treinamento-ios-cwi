@@ -23,7 +23,7 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISS-NC-8hi">
-                        <rect key="frame" x="12" y="12" width="49" height="23.5"/>
+                        <rect key="frame" x="12" y="12" width="136" height="23.5"/>
                         <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -48,11 +48,13 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="ISS-NC-8hi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="3qN-wi-GFu"/>
                 <constraint firstItem="ISS-NC-8hi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="12" id="3uV-c8-Dnl"/>
                 <constraint firstAttribute="bottom" secondItem="oTz-PT-Wp7" secondAttribute="bottom" constant="12" id="A0B-XL-m3c"/>
                 <constraint firstItem="Fz6-XQ-7te" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="IHe-KX-XKs"/>
+                <constraint firstAttribute="trailing" secondItem="ISS-NC-8hi" secondAttribute="trailing" constant="12" id="J7M-5m-6eg"/>
                 <constraint firstItem="Fz6-XQ-7te" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="fy5-Dc-cJk"/>
                 <constraint firstItem="oTz-PT-Wp7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mhn-Fi-pUO" secondAttribute="trailing" constant="5" id="i1J-Sh-HM8"/>
                 <constraint firstAttribute="bottom" secondItem="Mhn-Fi-pUO" secondAttribute="bottom" constant="12" id="mTk-5y-XNm"/>

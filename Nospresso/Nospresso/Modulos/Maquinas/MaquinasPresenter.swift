@@ -20,6 +20,8 @@ class MaquinasPresenter: NSObject {
 
 extension MaquinasPresenter:  MaquinasPresenterType {
     func telaCarregou() {
+        view.exibirTitulo("Maquinas")
+        
         api.requisitar(
             endpoint: .maquinas,
             sucesso: { (maquinas: [Maquina]) in

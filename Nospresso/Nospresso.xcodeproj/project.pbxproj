@@ -48,7 +48,7 @@
 		CFBB55B92542281800B91EF8 /* MaquinasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBB55B72542281800B91EF8 /* MaquinasViewController.xib */; };
 		CFBB55C025422C4F00B91EF8 /* MaquinaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB55BE25422C4F00B91EF8 /* MaquinaCollectionViewCell.swift */; };
 		CFBB55C125422C4F00B91EF8 /* MaquinaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFBB55BF25422C4F00B91EF8 /* MaquinaCollectionViewCell.xib */; };
-		CFBB55C625422F6A00B91EF8 /* MaquinasProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB55C525422F6A00B91EF8 /* MaquinasProtocols.swift */; };
+		CFBB55C625422F6A00B91EF8 /* Maquinas+Protocolos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB55C525422F6A00B91EF8 /* Maquinas+Protocolos.swift */; };
 		CFBB55CB25422FB400B91EF8 /* MaquinasPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBB55CA25422FB400B91EF8 /* MaquinasPresenter.swift */; };
 		CFC507292536592C00B0DCAE /* Categoria.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC507282536592C00B0DCAE /* Categoria.swift */; };
 		CFC50736253659B400B0DCAE /* Maquina.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC50735253659B400B0DCAE /* Maquina.swift */; };
@@ -129,7 +129,7 @@
 		CFBB55B72542281800B91EF8 /* MaquinasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaquinasViewController.xib; sourceTree = "<group>"; };
 		CFBB55BE25422C4F00B91EF8 /* MaquinaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinaCollectionViewCell.swift; sourceTree = "<group>"; };
 		CFBB55BF25422C4F00B91EF8 /* MaquinaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MaquinaCollectionViewCell.xib; sourceTree = "<group>"; };
-		CFBB55C525422F6A00B91EF8 /* MaquinasProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinasProtocols.swift; sourceTree = "<group>"; };
+		CFBB55C525422F6A00B91EF8 /* Maquinas+Protocolos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Maquinas+Protocolos.swift"; sourceTree = "<group>"; };
 		CFBB55CA25422FB400B91EF8 /* MaquinasPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaquinasPresenter.swift; sourceTree = "<group>"; };
 		CFC507282536592C00B0DCAE /* Categoria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categoria.swift; sourceTree = "<group>"; };
 		CFC50735253659B400B0DCAE /* Maquina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maquina.swift; sourceTree = "<group>"; };
@@ -354,7 +354,7 @@
 				CFBB55B62542281800B91EF8 /* MaquinasViewController.swift */,
 				CFBB55CA25422FB400B91EF8 /* MaquinasPresenter.swift */,
 				CFBB55B72542281800B91EF8 /* MaquinasViewController.xib */,
-				CFBB55C525422F6A00B91EF8 /* MaquinasProtocols.swift */,
+				CFBB55C525422F6A00B91EF8 /* Maquinas+Protocolos.swift */,
 			);
 			path = Maquinas;
 			sourceTree = "<group>";
@@ -687,7 +687,7 @@
 				CF13C224253B3D3C002539AE /* UIImageView+CarregarImagem.swift in Sources */,
 				CFBB55CB25422FB400B91EF8 /* MaquinasPresenter.swift in Sources */,
 				CFBB55C025422C4F00B91EF8 /* MaquinaCollectionViewCell.swift in Sources */,
-				CFBB55C625422F6A00B91EF8 /* MaquinasProtocols.swift in Sources */,
+				CFBB55C625422F6A00B91EF8 /* Maquinas+Protocolos.swift in Sources */,
 				CF13C1C6253B304B002539AE /* Pseudonimos.swift in Sources */,
 				CF6A21CB253F8905001E6617 /* DetalheCafe+Protocolos.swift in Sources */,
 				CF13C1B6253B2E70002539AE /* R.generated.swift in Sources */,

@@ -9,6 +9,7 @@ import Foundation
 
 protocol MaquinasViewType {
     func recarregarColecao()
+    func exibirTitulo(_ titulo: String)
 }
 
 protocol MaquinasPresenterType {
