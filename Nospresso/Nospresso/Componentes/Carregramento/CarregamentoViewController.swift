@@ -9,21 +9,13 @@ import UIKit
 
 class CarregamentoViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    class func doNib() -> CarregamentoViewController {
+        let vc = CarregamentoViewController(nib: R.nib.carregamentoViewController)
 
-        // Do any additional setup after loading the view.
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        
+        return vc
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

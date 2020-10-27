@@ -15,6 +15,8 @@ class MaquinasViewController: UIViewController {
     
     lazy var presenter: Presenter = MaquinasPresenter(view: self)
     
+    var telaDeCarregamento: CarregamentoViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
@@ -48,6 +50,13 @@ extension MaquinasViewController: UICollectionViewDelegateFlowLayout {
         static let alturaDaCelula = 260
         static let larguraDaCelula = 175
         static let espacamentoPadrao = 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let maquina = presenter.maquinas[indexPath.item]
+        let vc = DetalheProdutoViewController(produto: maquina)
+        
+        self.present(vc, animated: true, completion: nil)
     }
     
     

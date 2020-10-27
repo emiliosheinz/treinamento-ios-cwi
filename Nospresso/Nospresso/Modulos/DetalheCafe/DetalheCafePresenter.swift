@@ -21,12 +21,22 @@ extension DetalheCafePresenter: DetalheCafePresenterType {
         }
         
         view?.exibirTitulo(cafe.nome)
+        view?.configuraFavoritismo(Favoritos.instancia.estaFavoritado(produto: cafe))
         api.requisitar(
             endpoint: .cafe(id: cafe.id),
             sucesso: { (cafe: Cafe) in
                 self.view?.exibirDados(do: cafe)
             },
             falha: {_ in })
+    }
+    
+    func tocouNoFavoritar() {
+        guard let cafe = cafe else {
+            return
+        }
+        
+        let estaFavoritado = Favoritos.instancia.alternar(cafe)
+        view?.configuraFavoritismo(estaFavoritado)
     }
 }
 

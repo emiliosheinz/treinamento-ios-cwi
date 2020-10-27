@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,12 @@
 		963FDF4525479E4400BC4769 /* URLProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FDF3725479E4300BC4769 /* URLProviders.swift */; };
 		963FDF4625479E4400BC4769 /* APISupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FDF3825479E4300BC4769 /* APISupport.swift */; };
 		963FDF4725479E4400BC4769 /* APISupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963FDF3925479E4400BC4769 /* APISupport.swift */; };
+		CF714EE02548B50900499A1E /* RepositoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF714EDF2548B50900499A1E /* RepositoryListView.swift */; };
+		CF714EE92548BB6C00499A1E /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = CF714EE82548BB6C00499A1E /* Nuke */; };
+		CF714EEF2548BC2400499A1E /* FetchImage in Frameworks */ = {isa = PBXBuildFile; productRef = CF714EEE2548BC2400499A1E /* FetchImage */; };
+		CF714F012548C55D00499A1E /* RepositoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF714F002548C55D00499A1E /* RepositoriesListView.swift */; };
+		CF714F062548C57400499A1E /* RepositoriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF714F052548C57400499A1E /* RepositoriesListViewModel.swift */; };
+		CF714F0C2548CD6E00499A1E /* View+UINavigationBarAppearence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF714F0B2548CD6E00499A1E /* View+UINavigationBarAppearence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +69,10 @@
 		963FDF3725479E4300BC4769 /* URLProviders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProviders.swift; sourceTree = "<group>"; };
 		963FDF3825479E4300BC4769 /* APISupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISupport.swift; sourceTree = "<group>"; };
 		963FDF3925479E4400BC4769 /* APISupport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APISupport.swift; path = API/APISupport.swift; sourceTree = "<group>"; };
+		CF714EDF2548B50900499A1E /* RepositoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
+		CF714F002548C55D00499A1E /* RepositoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListView.swift; sourceTree = "<group>"; };
+		CF714F052548C57400499A1E /* RepositoriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesListViewModel.swift; sourceTree = "<group>"; };
+		CF714F0B2548CD6E00499A1E /* View+UINavigationBarAppearence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+UINavigationBarAppearence.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF714EE92548BB6C00499A1E /* Nuke in Frameworks */,
+				CF714EEF2548BC2400499A1E /* FetchImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,10 +125,13 @@
 		963FDEFC25479D8000BC4769 /* SwiftHub */ = {
 			isa = PBXGroup;
 			children = (
+				CF714F0A2548CD4D00499A1E /* Extensions */,
+				CF714EF32548C51D00499A1E /* Modules */,
 				963FDF3525479E4300BC4769 /* API */,
+				963FDF3025479E4300BC4769 /* Models */,
+				CF714EDE2548B4EB00499A1E /* Components */,
 				963FDF3925479E4400BC4769 /* APISupport.swift */,
 				963FDF2D25479E4300BC4769 /* MockedData.swift */,
-				963FDF3025479E4300BC4769 /* Models */,
 				963FDEFD25479D8000BC4769 /* SwiftHubApp.swift */,
 				963FDEFF25479D8000BC4769 /* ContentView.swift */,
 				963FDF0125479D8200BC4769 /* Assets.xcassets */,
@@ -173,6 +188,39 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		CF714EDE2548B4EB00499A1E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CF714EDF2548B50900499A1E /* RepositoryListView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CF714EF32548C51D00499A1E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				CF714EF42548C52700499A1E /* RepositoriesList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CF714EF42548C52700499A1E /* RepositoriesList */ = {
+			isa = PBXGroup;
+			children = (
+				CF714F002548C55D00499A1E /* RepositoriesListView.swift */,
+				CF714F052548C57400499A1E /* RepositoriesListViewModel.swift */,
+			);
+			path = RepositoriesList;
+			sourceTree = "<group>";
+		};
+		CF714F0A2548CD4D00499A1E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CF714F0B2548CD6E00499A1E /* View+UINavigationBarAppearence.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,6 +237,10 @@
 			dependencies = (
 			);
 			name = SwiftHub;
+			packageProductDependencies = (
+				CF714EE82548BB6C00499A1E /* Nuke */,
+				CF714EEE2548BC2400499A1E /* FetchImage */,
+			);
 			productName = SwiftHub;
 			productReference = 963FDEFA25479D8000BC4769 /* SwiftHub.app */;
 			productType = "com.apple.product-type.application";
@@ -260,6 +312,10 @@
 				Base,
 			);
 			mainGroup = 963FDEF125479D8000BC4769;
+			packageReferences = (
+				CF714EE72548BB6C00499A1E /* XCRemoteSwiftPackageReference "Nuke" */,
+				CF714EED2548BC2400499A1E /* XCRemoteSwiftPackageReference "FetchImage" */,
+			);
 			productRefGroup = 963FDEFB25479D8000BC4769 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -302,13 +358,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF714F062548C57400499A1E /* RepositoriesListViewModel.swift in Sources */,
 				963FDF4625479E4400BC4769 /* APISupport.swift in Sources */,
+				CF714F012548C55D00499A1E /* RepositoriesListView.swift in Sources */,
 				963FDF3D25479E4400BC4769 /* MockedData.swift in Sources */,
 				963FDF4425479E4400BC4769 /* Requester.swift in Sources */,
 				963FDF4525479E4400BC4769 /* URLProviders.swift in Sources */,
 				963FDF4025479E4400BC4769 /* SearchResult.swift in Sources */,
 				963FDF4325479E4400BC4769 /* MockedData.swift in Sources */,
+				CF714EE02548B50900499A1E /* RepositoryListView.swift in Sources */,
 				963FDF0025479D8000BC4769 /* ContentView.swift in Sources */,
+				CF714F0C2548CD6E00499A1E /* View+UINavigationBarAppearence.swift in Sources */,
 				963FDF4725479E4400BC4769 /* APISupport.swift in Sources */,
 				963FDF4125479E4400BC4769 /* User.swift in Sources */,
 				963FDEFE25479D8000BC4769 /* SwiftHubApp.swift in Sources */,
@@ -632,6 +692,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CF714EE72548BB6C00499A1E /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.2;
+			};
+		};
+		CF714EED2548BC2400499A1E /* XCRemoteSwiftPackageReference "FetchImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/FetchImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CF714EE82548BB6C00499A1E /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF714EE72548BB6C00499A1E /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		CF714EEE2548BC2400499A1E /* FetchImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CF714EED2548BC2400499A1E /* XCRemoteSwiftPackageReference "FetchImage" */;
+			productName = FetchImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 963FDEF225479D8000BC4769 /* Project object */;
 }

@@ -30,6 +30,16 @@
 		CF2CC2CA2538EBA300C32576 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF2CC2C02538EBA300C32576 /* OpenSans-ExtraBold.ttf */; };
 		CF2CC2D62538F49F00C32576 /* CafesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CC2D52538F49F00C32576 /* CafesTableViewController.swift */; };
 		CF2CC2DF2538FAA900C32576 /* CafeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CC2DE2538FAA900C32576 /* CafeTableViewCell.swift */; };
+		CF4CE6A425459B3C008EFE66 /* DetalheProdutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE6A225459B3C008EFE66 /* DetalheProdutoViewController.swift */; };
+		CF4CE6A525459B3C008EFE66 /* DetalheProdutoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4CE6A325459B3C008EFE66 /* DetalheProdutoViewController.xib */; };
+		CF4CE6AA2545A47F008EFE66 /* Produto.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE6A92545A47F008EFE66 /* Produto.swift */; };
+		CF4CE6B22545B829008EFE66 /* CarregamentoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE6B02545B829008EFE66 /* CarregamentoViewController.swift */; };
+		CF4CE6B32545B829008EFE66 /* CarregamentoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF4CE6B12545B829008EFE66 /* CarregamentoViewController.xib */; };
+		CF4CE6BB2545BA44008EFE66 /* CarregamentoViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE6BA2545BA44008EFE66 /* CarregamentoViewType.swift */; };
+		CF4CE6C12545CA39008EFE66 /* Favoritos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE6C02545CA39008EFE66 /* Favoritos.swift */; };
+		CF4CE6C62545CEC6008EFE66 /* Favorito.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE6C52545CEC6008EFE66 /* Favorito.swift */; };
+		CF4CE6E12545F2B2008EFE66 /* FavoritoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE6E02545F2B2008EFE66 /* FavoritoTableViewCell.swift */; };
+		CF4CE6E62545F3F3008EFE66 /* FavoritosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CE6E52545F3F3008EFE66 /* FavoritosViewController.swift */; };
 		CF6A21BB253F77BE001E6617 /* DetalheCafeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A21BA253F77BE001E6617 /* DetalheCafeViewController.swift */; };
 		CF6A21C1253F7F7D001E6617 /* ContadorIntensidadeStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A21C0253F7F7D001E6617 /* ContadorIntensidadeStackView.swift */; };
 		CF6A21C6253F8882001E6617 /* DetalheCafePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6A21C5253F8882001E6617 /* DetalheCafePresenter.swift */; };
@@ -105,6 +115,16 @@
 		CF2CC2C02538EBA300C32576 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 		CF2CC2D52538F49F00C32576 /* CafesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesTableViewController.swift; sourceTree = "<group>"; };
 		CF2CC2DE2538FAA900C32576 /* CafeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafeTableViewCell.swift; sourceTree = "<group>"; };
+		CF4CE6A225459B3C008EFE66 /* DetalheProdutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheProdutoViewController.swift; sourceTree = "<group>"; };
+		CF4CE6A325459B3C008EFE66 /* DetalheProdutoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalheProdutoViewController.xib; sourceTree = "<group>"; };
+		CF4CE6A92545A47F008EFE66 /* Produto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Produto.swift; sourceTree = "<group>"; };
+		CF4CE6B02545B829008EFE66 /* CarregamentoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarregamentoViewController.swift; sourceTree = "<group>"; };
+		CF4CE6B12545B829008EFE66 /* CarregamentoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarregamentoViewController.xib; sourceTree = "<group>"; };
+		CF4CE6BA2545BA44008EFE66 /* CarregamentoViewType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarregamentoViewType.swift; sourceTree = "<group>"; };
+		CF4CE6C02545CA39008EFE66 /* Favoritos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favoritos.swift; sourceTree = "<group>"; };
+		CF4CE6C52545CEC6008EFE66 /* Favorito.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favorito.swift; sourceTree = "<group>"; };
+		CF4CE6E02545F2B2008EFE66 /* FavoritoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritoTableViewCell.swift; sourceTree = "<group>"; };
+		CF4CE6E52545F3F3008EFE66 /* FavoritosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosViewController.swift; sourceTree = "<group>"; };
 		CF6A21BA253F77BE001E6617 /* DetalheCafeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheCafeViewController.swift; sourceTree = "<group>"; };
 		CF6A21C0253F7F7D001E6617 /* ContadorIntensidadeStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContadorIntensidadeStackView.swift; sourceTree = "<group>"; };
 		CF6A21C5253F8882001E6617 /* DetalheCafePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheCafePresenter.swift; sourceTree = "<group>"; };
@@ -249,6 +269,7 @@
 		CF2CC2D42538F48E00C32576 /* Modulos */ = {
 			isa = PBXGroup;
 			children = (
+				CF4CE6BF2545CA23008EFE66 /* Favoritos */,
 				CFBB55B5254227FA00B91EF8 /* Maquinas */,
 				CF6A21B9253F779F001E6617 /* DetalheCafe */,
 				CF2CC2DD2538FA9500C32576 /* Cafes */,
@@ -264,6 +285,44 @@
 				CF2CC2D52538F49F00C32576 /* CafesTableViewController.swift */,
 			);
 			path = Cafes;
+			sourceTree = "<group>";
+		};
+		CF4CE69425459A17008EFE66 /* DetalheProduto */ = {
+			isa = PBXGroup;
+			children = (
+				CF4CE6A225459B3C008EFE66 /* DetalheProdutoViewController.swift */,
+				CF4CE6A325459B3C008EFE66 /* DetalheProdutoViewController.xib */,
+			);
+			path = DetalheProduto;
+			sourceTree = "<group>";
+		};
+		CF4CE6AE2545B7EE008EFE66 /* Componentes */ = {
+			isa = PBXGroup;
+			children = (
+				CF4CE6AF2545B80A008EFE66 /* Carregramento */,
+				CF4CE69425459A17008EFE66 /* DetalheProduto */,
+			);
+			path = Componentes;
+			sourceTree = "<group>";
+		};
+		CF4CE6AF2545B80A008EFE66 /* Carregramento */ = {
+			isa = PBXGroup;
+			children = (
+				CF4CE6B02545B829008EFE66 /* CarregamentoViewController.swift */,
+				CF4CE6B12545B829008EFE66 /* CarregamentoViewController.xib */,
+				CF4CE6BA2545BA44008EFE66 /* CarregamentoViewType.swift */,
+			);
+			path = Carregramento;
+			sourceTree = "<group>";
+		};
+		CF4CE6BF2545CA23008EFE66 /* Favoritos */ = {
+			isa = PBXGroup;
+			children = (
+				CF4CE6C02545CA39008EFE66 /* Favoritos.swift */,
+				CF4CE6E02545F2B2008EFE66 /* FavoritoTableViewCell.swift */,
+				CF4CE6E52545F3F3008EFE66 /* FavoritosViewController.swift */,
+			);
+			path = Favoritos;
 			sourceTree = "<group>";
 		};
 		CF6A21B9253F779F001E6617 /* DetalheCafe */ = {
@@ -312,6 +371,7 @@
 		CFAD8D0B253639BC00317B92 /* Nospresso */ = {
 			isa = PBXGroup;
 			children = (
+				CF4CE6AE2545B7EE008EFE66 /* Componentes */,
 				CF13C1B5253B2E70002539AE /* R.generated.swift */,
 				CF13C1AB253B1F40002539AE /* Extensoes */,
 				CF2CC2D42538F48E00C32576 /* Modulos */,
@@ -376,6 +436,8 @@
 				CFF267412537C12900524D42 /* Acessorio.swift */,
 				CFF267462537C1AC00524D42 /* CategoriaDeAcessorios.swift */,
 				CFF267622537C40F00524D42 /* Cafe.swift */,
+				CF4CE6A92545A47F008EFE66 /* Produto.swift */,
+				CF4CE6C52545CEC6008EFE66 /* Favorito.swift */,
 			);
 			path = Modelos;
 			sourceTree = "<group>";
@@ -499,12 +561,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4CE6A525459B3C008EFE66 /* DetalheProdutoViewController.xib in Resources */,
 				CF2CC2C12538EBA300C32576 /* OpenSans-SemiBoldItalic.ttf in Resources */,
 				CF2CC2C82538EBA300C32576 /* OpenSans-Regular.ttf in Resources */,
 				CF2CC2C52538EBA300C32576 /* OpenSans-Italic.ttf in Resources */,
 				CF2CC2C42538EBA300C32576 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
 				CFAD8D19253639BD00317B92 /* LaunchScreen.storyboard in Resources */,
 				CF2CC2C72538EBA300C32576 /* OpenSans-LightItalic.ttf in Resources */,
+				CF4CE6B32545B829008EFE66 /* CarregamentoViewController.xib in Resources */,
 				CFBB559B25421D2200B91EF8 /* MedidaView.xib in Resources */,
 				CF2CC2C92538EBA300C32576 /* OpenSans-BoldItalic.ttf in Resources */,
 				CFAD8D16253639BD00317B92 /* Assets.xcassets in Resources */,
@@ -682,26 +746,34 @@
 			files = (
 				CF2CC2DF2538FAA900C32576 /* CafeTableViewCell.swift in Sources */,
 				CF6A21C6253F8882001E6617 /* DetalheCafePresenter.swift in Sources */,
+				CF4CE6A425459B3C008EFE66 /* DetalheProdutoViewController.swift in Sources */,
 				CFBB559625421D1600B91EF8 /* MedidaView.swift in Sources */,
+				CF4CE6C12545CA39008EFE66 /* Favoritos.swift in Sources */,
 				CF2CC2D62538F49F00C32576 /* CafesTableViewController.swift in Sources */,
 				CF13C224253B3D3C002539AE /* UIImageView+CarregarImagem.swift in Sources */,
 				CFBB55CB25422FB400B91EF8 /* MaquinasPresenter.swift in Sources */,
+				CF4CE6E62545F3F3008EFE66 /* FavoritosViewController.swift in Sources */,
 				CFBB55C025422C4F00B91EF8 /* MaquinaCollectionViewCell.swift in Sources */,
 				CFBB55C625422F6A00B91EF8 /* Maquinas+Protocolos.swift in Sources */,
 				CF13C1C6253B304B002539AE /* Pseudonimos.swift in Sources */,
+				CF4CE6BB2545BA44008EFE66 /* CarregamentoViewType.swift in Sources */,
 				CF6A21CB253F8905001E6617 /* DetalheCafe+Protocolos.swift in Sources */,
+				CF4CE6C62545CEC6008EFE66 /* Favorito.swift in Sources */,
 				CF13C1B6253B2E70002539AE /* R.generated.swift in Sources */,
 				CF13C1A7253B1795002539AE /* MenuProdutosViewController.swift in Sources */,
+				CF4CE6E12545F2B2008EFE66 /* FavoritoTableViewCell.swift in Sources */,
 				CFC5073C25365A0200B0DCAE /* Api.swift in Sources */,
 				CF6A21BB253F77BE001E6617 /* DetalheCafeViewController.swift in Sources */,
 				CFF267632537C40F00524D42 /* Cafe.swift in Sources */,
 				CFF267472537C1AC00524D42 /* CategoriaDeAcessorios.swift in Sources */,
 				CF13C1CD253B3200002539AE /* CategoriaDeCafeHeaderView.swift in Sources */,
+				CF4CE6B22545B829008EFE66 /* CarregamentoViewController.swift in Sources */,
 				CF13C1AD253B1F5F002539AE /* UIViewController+Barbadas.swift in Sources */,
 				CFAD8D11253639BC00317B92 /* ViewController.swift in Sources */,
 				CF6A21C1253F7F7D001E6617 /* ContadorIntensidadeStackView.swift in Sources */,
 				CFBB55B82542281800B91EF8 /* MaquinasViewController.swift in Sources */,
 				CFC5074725365A4600B0DCAE /* Endpoint.swift in Sources */,
+				CF4CE6AA2545A47F008EFE66 /* Produto.swift in Sources */,
 				CFC507292536592C00B0DCAE /* Categoria.swift in Sources */,
 				CFAD8D0D253639BC00317B92 /* AppDelegate.swift in Sources */,
 				CFC50736253659B400B0DCAE /* Maquina.swift in Sources */,

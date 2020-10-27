@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Maquina: Decodable, CustomStringConvertible {
+public struct Maquina: Produto, CustomStringConvertible {
     public var description: String {nome}
     
     let id: Int
@@ -15,4 +15,6 @@ public struct Maquina: Decodable, CustomStringConvertible {
     let preco: Double
     let descricao: String
     let imagem: String
+    
+    var tipo: TipoProduto { .maquina }
 }

@@ -8,7 +8,8 @@
 import Foundation
 
 
-public struct Cafe: Decodable {
+public struct Cafe: Produto {
+    
     let id: Int
     let nome: String
     let precoUnitario: Double
@@ -19,9 +20,10 @@ public struct Cafe: Decodable {
     let intensidade: Int?
     let torrefacao: String?
     let perfilAromatico: String?
+    var tipo: TipoProduto { .cafe }
+    var preco: Double { precoUnitario }
 
-    
-    enum Medida: String, Decodable {
+    enum Medida: String, Codable {
         case lungo, espresso, ristretto
     }
 }
