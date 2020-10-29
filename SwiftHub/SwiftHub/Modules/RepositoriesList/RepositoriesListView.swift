@@ -18,11 +18,14 @@ struct RepositoriesListView: View {
         NavigationView {
             List {
                 ForEach(viewModel.repositories) { repository in
-                    RepositoryListView(repository)
+                    NavigationLink(destination: RepositoryDetailView(repository: repository)) {
+                        RepositoryListView(repository: repository)
+                    }
                 }
             }
             .navigationBarTitle("Repositories", displayMode: .large)
         }
+        .accentColor(.white)
     }
 }
 
